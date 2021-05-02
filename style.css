@@ -1,0 +1,87 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --light-background-color: #efefef;
+    --light-background-elements-color: #fff;
+    --light-box-shadow : 0 0px 6px 5px rgba(0,0,0,0.1);
+    --light-link-font-color: #636363;
+    --light-font-color: #333;
+}
+
+body {
+    background-color: var(--light-background-color);
+}
+
+header {
+    background-color: var(--light-background-elements-color);
+    padding: 2rem;
+    box-shadow: var(--light-box-shadow);
+}
+
+a.navigation-link {
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--light-font-color);
+}
+
+section.projects-list {
+    padding: 2rem;
+    overflow: hidden;
+    display: flex;
+    row-gap: 3rem;
+    column-gap: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+article {
+    box-shadow: var(--light-box-shadow);
+    overflow: inherit;
+    width: 500px;
+    border-radius: 5px;
+    display: flex;
+}
+
+article > img {
+    width: 180px;
+    height: 320px;
+    object-fit: cover;
+}
+
+article > div {
+    width: 280px;
+    padding: 20px;
+    display: grid;
+    row-gap: 10px;
+}
+
+article > div > figcaption {
+    text-align: center;
+    font-size: 16px;
+}
+
+article > div > p {
+    font-size: 14px;
+    text-align: justify;
+}
+
+article > div > ul {
+    list-style-position: inside;
+}
+
+article > div > ul > li {
+    font-size: 14px;
+}
+
+article > div > a {
+    text-align: right;
+    width: 280px;
+    display: block;
+    margin-top: auto;
+    color: var(--light-link-font-color);
+}
