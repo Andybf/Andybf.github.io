@@ -1,16 +1,19 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
     font-size: 12px;
+    color: #333;
     margin: 0;
     padding: 0;
 }
 
 :root {
-    --light-background-color: #efefef;
+    --light-background-color: #ebebeb;
     --light-background-elements-color: #fff;
-    --light-box-shadow : 0 0px 6px 5px rgba(0,0,0,0.1);
+    --light-box-shadow : 0 0px 6px 5px #0000001a;
     --light-link-font-color: #636363;
     --light-font-color: #333;
+    --light-font-size: 10pt;
 }
 
 body {
@@ -39,49 +42,56 @@ section.projects-list {
     justify-content: center;
 }
 
-article {
+a.project-item {
     box-shadow: var(--light-box-shadow);
     overflow: inherit;
-    width: 500px;
     border-radius: 5px;
     display: flex;
+    max-height: 180px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+a.project-item:hover {
+    transform: scale(1.05);
 }
 
-article > img {
+a.project-item > img {
     width: 180px;
     height: 320px;
     object-fit: cover;
 }
 
-article > div {
+a.project-item > div {
     width: 280px;
     padding: 20px;
     display: grid;
     row-gap: 10px;
+    user-select: none;
 }
 
-article > div > figcaption {
+a.project-item > div > figcaption {
     text-align: center;
     font-size: 16px;
 }
 
-article > div > p {
-    font-size: 14px;
+a.project-item > div > p {
+    font-size: var(--light-font-size);
     text-align: justify;
 }
 
-article > div > ul {
+a.project-item > div > ul {
     list-style-position: inside;
 }
 
-article > div > ul > li {
-    font-size: 14px;
+a.project-item > div > ul > li {
+    font-size: var(--light-font-size);
 }
 
-article > div > a {
-    text-align: right;
-    width: 280px;
-    display: block;
-    margin-top: auto;
-    color: var(--light-link-font-color);
+@media(max-width: 540px) {
+    a.project-item > img {
+        width: 37%;
+    }
+    a.project-item > div {
+        width: 63%;
+    }
 }
