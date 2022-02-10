@@ -195,4 +195,19 @@ span[value='OpenGL'] {
     background-color: #383996;
 }
 
+footer {
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+    background-color: var(--global-interface-background);
+}
+
+footer > * {
+    font-size: 12pt;
+}
+footer > a {
+    text-decoration: underline;
+}
+
 @media(max-width: 480px) {}

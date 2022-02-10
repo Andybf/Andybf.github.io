@@ -14,8 +14,9 @@
         "name" : "PaintSpace",
         "imgSrc" : "/media/img/paintspace.png",
         "description" : "This single page application allow the possibility to create drawnings, paintings, edit images, play with geometrical forms, mess with the color pallete and much more, everything is simple and straight to the point Try now and unleash your creativity.",
-        "languages" : ["HTML","CSS","JavaScript"],
+        "languages" : ["HTML","CSS","JavaScript","Canvas API"],
         "link": "https://github.com/Andybf/PaintSpace",
+        "linkLiveDemo" : "https://andybf.github.io/PaintSpace/",
         "isLiveDemoEnabled" : true,
         "isViewSourceEnabled" : true,
         "isVisible" : true
@@ -26,6 +27,7 @@
         "description" : "A graphics card firmware editor, making possible to performa extreme overclocks on the board, focused on editing AMD GPU's BIOS realeased between 2011 and 2015, works only on macOS system.",
         "languages" : ["Objective-C","C++","C"],
         "link" : "https://github.com/Andybf/AtomBiosEditor",
+        "linkLiveDemo" : "/",
         "isLiveDemoEnabled" : false,
         "isViewSourceEnabled" : true,
         "isVisible" : true
@@ -36,6 +38,7 @@
         "description" : "A very simple old game, but recreated with the help of C language combined with OpenGL, no engines were used, the objective is very clear, eat as more as you can, without touching anything else.",
         "languages" : ["C","C++","OpenGL"],
         "link" : "https://github.com/Andybf/SnakeGame",
+        "linkLiveDemo" : "/",
         "isLiveDemoEnabled" : false,
         "isViewSourceEnabled" : true,
         "isVisible" : true
@@ -45,9 +48,10 @@
         "imgSrc" : "/media/img/andromeda.png",
         "description" : "One of the first tries to develop a working game, it turns out to be a complete mess in his final stages of development, it doesn't even have an appropriate name, but it has a codename Andromeda.",
         "languages" : ["Java","Swing"],
-        "link" : "/",
+        "link" : "https://github.com/Andybf/AndromedaProject",
+        "linkLiveDemo" : "/",
         "isLiveDemoEnabled" : false,
-        "isViewSourceEnabled" : false,
+        "isViewSourceEnabled" : true,
         "isVisible" : false
     },
     {
@@ -55,7 +59,8 @@
         "imgSrc" : "/media/img/mandelbrot.png",
         "description" : "The famous experiment of Mandelbrot set creates an very interesting and very, very, very complex image by doing some math and drawing the result on the cartesian plane.",
         "languages" : ["JavaScript","HTML","CSS","Canvas API"],
-        "link" : "/links/Mandelbrot-Experiment-001",
+        "link" : "https://github.com/Andybf/Mandelbrot-Experiment",
+        "linkLiveDemo" : "https://andybf.github.io/Mandelbrot-Experiment/",
         "isLiveDemoEnabled" : true,
         "isViewSourceEnabled" : true,
         "isVisible" : true
@@ -65,7 +70,8 @@
         "imgSrc" : "/media/img/fallingblocks.png",
         "description" : "A simple, but more complex implementation of a game written in C with help of OpenGL",
         "languages" : ["C","C++","OpenGL"],
-        "link" : "/",
+        "link" : "https://github.com/Andybf/FallingBlocks",
+        "linkLiveDemo" : "/",
         "isLiveDemoEnabled" : false,
         "isViewSourceEnabled" : true,
         "isVisible" : false
