@@ -2,96 +2,197 @@
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     font-size: 12px;
-    color: #333;
     margin: 0;
     padding: 0;
+    font-family: var(--global-font-family);
+    color: var(--global-font-color);
 }
 
-:root {
-    --light-background-color: #ebebeb;
-    --light-background-elements-color: #fff;
-    --light-box-shadow : 0 0px 6px 5px #0000001a;
-    --light-link-font-color: #636363;
-    --light-font-color: #333;
-    --light-font-size: 10pt;
+@font-face {
+    font-family: OpenSans;
+    src: url('./media/fonts/open-sans/OpenSans-Semibold.ttf');
+}
+
+@font-face {
+    font-family: LeagueSpartan;
+    src: url('./media/fonts/league-spartan/leaguespartan-bold.ttf');
+}
+
+.light-theme {
+    --global-background: #dadada;
+    --global-interface-background: #f1f1f1;
+    --second-interface-background: rgb(228, 228, 228);
+    --global-font-family: 'LeagueSpartan';
+    --global-box-shadow : 0 0px 6px 5px #0000001a;
+    --global-link-font-color: #636363;
+    --global-font-color: #333;
+    --global-font-size: 12pt;
+}
+
+.dark-theme {
+    --global-background: #141414;
+    --global-interface-background: #393939;
+    --second-interface-background: #393939;
+    --global-font-family: 'LeagueSpartan';
+    --global-box-shadow: 0 0px 6px 5px #ff0000;
+    --global-link-font-color: #636363;
+    --global-font-color: #fff;
+    --global-font-size: 12pt;
 }
 
 body {
-    background-color: var(--light-background-color);
+    background-color: var(--global-background);
 }
 
 header {
-    background-color: var(--light-background-elements-color);
-    padding: 2rem;
-    box-shadow: var(--light-box-shadow);
+    background-color: var(--global-interface-background);
+    margin-bottom: 3rem;
+    padding: 1.5rem;
 }
 
-a.navigation-link {
-    text-decoration: none;
-    font-size: 20px;
-    color: var(--light-font-color);
+h1 {
+    font-size: 12pt;
 }
 
-section.projects-list {
-    padding: 2rem;
+.projects-list {
+    display: grid;
+    row-gap: 5rem;
+}
+
+.card-body {
     overflow: hidden;
     display: flex;
-    row-gap: 3rem;
-    column-gap: 3rem;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-a.project-item {
-    box-shadow: var(--light-box-shadow);
-    overflow: inherit;
-    border-radius: 5px;
-    display: flex;
-    max-height: 180px;
-    cursor: pointer;
+    background: var(--second-interface-background);
     transition: 0.5s;
-}
-a.project-item:hover {
-    transform: scale(1.05);
-}
-
-a.project-item > img {
-    width: 180px;
-    height: 320px;
-    object-fit: cover;
+    width: 100%;
+    height: 66vh;
 }
 
-a.project-item > div {
-    width: 280px;
+.card-body:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.card-image {
     padding: 20px;
     display: grid;
     row-gap: 10px;
     user-select: none;
+    width: 60%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: brightness(0.6);
 }
 
-a.project-item > div > figcaption {
+.card-details {
+    padding: 3rem;
+    display: grid;
+    row-gap: 10px;
+    user-select: none;
+    width: 40%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card-title {
     text-align: center;
-    font-size: 16px;
+    font-size: 22pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-a.project-item > div > p {
-    font-size: var(--light-font-size);
+.card-description {
+    font-size: var(--global-font-size);
+    font-family: "OpenSans";
     text-align: justify;
 }
 
-a.project-item > div > ul {
-    list-style-position: inside;
+.card-tags {
+    display: flex;
+    column-gap: 15px;
+    align-items: center;
 }
 
-a.project-item > div > ul > li {
-    font-size: var(--light-font-size);
+.card-tags > span {
+    color: rgb(255, 255, 255);
+    background-color: grey;
+    padding: 7px;
+    border-radius: 5px;
 }
 
-@media(max-width: 540px) {
-    a.project-item > img {
-        width: 37%;
-    }
-    a.project-item > div {
-        width: 63%;
-    }
+span[value='JavaScript'] {
+    background-color: #dead06;
 }
+span[value='HTML'] {
+    background-color: #FC5E30;
+}
+span[value='CSS'] {
+    background-color: #0075b3;
+}
+span[value='C'] {
+    background-color: #2751A6;
+}
+span[value='C++'] {
+    background-color: #569ed0;
+}
+span[value='Objective-C'] {
+    background-color: #171717;
+}
+span[value='Java'] {
+    background-color: #ca2a16;
+}
+span[value='OpenGL'] {
+    background-color: #458ab0;
+}
+
+.card-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2rem;
+}
+
+.card-button {
+    padding: 0px 20px;
+    border-radius: 10px;
+    height: 35px;
+    font-size: 10pt;
+    display: flex;
+    align-items: center;
+    transition: .25s;
+}
+.card-button[disabled='true'] {
+    background-color: grey !important;
+    border: none !important;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+#live-demo::before {
+    content: "▸";
+    padding: 0 10px;
+    position: relative;
+    font-size: 14pt;
+    line-height: 0px;
+}
+#live-demo {
+    background-color: #2b9852;
+    border: 5px solid #1f723c;
+}
+#live-demo:hover {
+    background-color: #1f723c;
+}
+
+#view-source::before {
+    content: "</>";
+    padding-right: 10px;
+}
+#view-source {
+    background-color: #5153ca;
+    border: 5px solid #383996;
+}
+#view-source:hover {
+    background-color: #383996;
+}
+
+@media(max-width: 480px) {}
