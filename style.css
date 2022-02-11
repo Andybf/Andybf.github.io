@@ -1,11 +1,10 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
-    font-size: 12px;
     margin: 0;
     padding: 0;
     font-family: var(--global-font-family);
     color: var(--global-font-color);
+    text-decoration: none;
 }
 
 @font-face {
@@ -16,6 +15,11 @@
 @font-face {
     font-family: LeagueSpartan;
     src: url('./media/fonts/league-spartan/leaguespartan-bold.ttf');
+}
+
+@font-face {
+    font-family: LatoHeavy;
+    src: url('./media/fonts/lato/Lato-Heavy.ttf');
 }
 
 .light-theme {
@@ -32,7 +36,7 @@
 .dark-theme {
     --global-background: #141414;
     --global-interface-background: #393939;
-    --second-interface-background: #393939;
+    --second-interface-background: #2b2b2b;
     --global-font-family: 'LeagueSpartan';
     --global-box-shadow: 0 0px 6px 5px #ff0000;
     --global-link-font-color: #636363;
@@ -48,6 +52,15 @@ header {
     background-color: var(--global-interface-background);
     margin-bottom: 3rem;
     padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+header > nav > a {
+    font-size: 10pt;
+    padding: 12px;
+    border-radius: 10px;
+    background-color: var(--second-interface-background);
 }
 
 h1 {
@@ -110,14 +123,16 @@ h1 {
 .card-tags {
     display: flex;
     column-gap: 15px;
+    font-size: 10pt;
     align-items: center;
 }
 
 .card-tags > span {
     color: rgb(255, 255, 255);
     background-color: grey;
-    padding: 7px;
+    padding: 3px 8px 1px 8px;
     border-radius: 5px;
+    display: flex;
 }
 
 span[value='JavaScript'] {
@@ -196,18 +211,45 @@ span[value='OpenGL'] {
 }
 
 footer {
-    padding: 3rem;
     display: flex;
-    justify-content: space-between;
     margin-top: 5rem;
     background-color: var(--global-interface-background);
+    flex-direction: column;
 }
 
-footer > * {
-    font-size: 12pt;
+.footer-list {
+    display: flex;
+    padding: 3rem 4rem;
+    background-color: var(--second-interface-background);
 }
-footer > a {
-    text-decoration: underline;
+
+.footer-list > ul {
+    display: inherit;
+    flex-direction: column;
+    list-style: none;
+    row-gap: 3rem;
+}
+
+.footer-list > ul > li {
+    display: flex;
+    column-gap: 15px;
+}
+
+.footer-list > ul > li > a {
+    font-size: 12pt;
+    font-family: 'LatoHeavy';
+}
+
+img.footer-icon {
+    height: 20px;
+    filter: invert(1);
+}
+
+.bottom-footer {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+    font-size: 11pt;
 }
 
 @media(max-width: 480px) {}
