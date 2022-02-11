@@ -22,6 +22,28 @@
         "isVisible" : true
     },
     {
+        "name" : "Falling Blocks",
+        "imgSrc" : "/media/img/fallingblocks.png",
+        "description" : "A simple, but more complex implementation of a game written in C with help of OpenGL",
+        "languages" : ["C","C++","OpenGL"],
+        "link" : "https://github.com/Andybf/FallingBlocks",
+        "linkLiveDemo" : "/",
+        "isLiveDemoEnabled" : false,
+        "isViewSourceEnabled" : true,
+        "isVisible" : false
+    },
+    {
+        "name" : "Mandelbrot Experiment",
+        "imgSrc" : "/media/img/mandelbrot.png",
+        "description" : "The famous experiment of Mandelbrot set creates an very interesting and very, very, very complex image by doing some math and drawing the result on the cartesian plane.",
+        "languages" : ["JavaScript","HTML","CSS","Canvas API"],
+        "link" : "https://github.com/Andybf/Mandelbrot-Experiment",
+        "linkLiveDemo" : "https://andybf.github.io/Mandelbrot-Experiment/",
+        "isLiveDemoEnabled" : true,
+        "isViewSourceEnabled" : true,
+        "isVisible" : true
+    },
+    {
         "name" : "AtomBiosEditor",
         "imgSrc" : "/media/img/atombios.png",
         "description" : "A graphics card firmware editor, making possible to performa extreme overclocks on the board, focused on editing AMD GPU's BIOS realeased between 2011 and 2015, works only on macOS system.",
@@ -49,28 +71,6 @@
         "description" : "One of the first tries to develop a working game, it turns out to be a complete mess in his final stages of development, it doesn't even have an appropriate name, but it has a codename Andromeda.",
         "languages" : ["Java","Swing"],
         "link" : "https://github.com/Andybf/AndromedaProject",
-        "linkLiveDemo" : "/",
-        "isLiveDemoEnabled" : false,
-        "isViewSourceEnabled" : true,
-        "isVisible" : false
-    },
-    {
-        "name" : "Mandelbrot Experiment",
-        "imgSrc" : "/media/img/mandelbrot.png",
-        "description" : "The famous experiment of Mandelbrot set creates an very interesting and very, very, very complex image by doing some math and drawing the result on the cartesian plane.",
-        "languages" : ["JavaScript","HTML","CSS","Canvas API"],
-        "link" : "https://github.com/Andybf/Mandelbrot-Experiment",
-        "linkLiveDemo" : "https://andybf.github.io/Mandelbrot-Experiment/",
-        "isLiveDemoEnabled" : true,
-        "isViewSourceEnabled" : true,
-        "isVisible" : true
-    },
-    {
-        "name" : "Falling Blocks",
-        "imgSrc" : "/media/img/fallingblocks.png",
-        "description" : "A simple, but more complex implementation of a game written in C with help of OpenGL",
-        "languages" : ["C","C++","OpenGL"],
-        "link" : "https://github.com/Andybf/FallingBlocks",
         "linkLiveDemo" : "/",
         "isLiveDemoEnabled" : false,
         "isViewSourceEnabled" : true,

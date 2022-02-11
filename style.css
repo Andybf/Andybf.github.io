@@ -221,6 +221,7 @@ footer {
     display: flex;
     padding: 3rem 4rem;
     background-color: var(--second-interface-background);
+    justify-content: space-between;
 }
 
 .footer-list > ul {
@@ -243,6 +244,18 @@ footer {
 img.footer-icon {
     height: 20px;
     filter: invert(1);
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    row-gap: 1rem;
+}
+
+figure > img {
+    height: 132px;
+    width: 132px;
 }
 
 .bottom-footer {
