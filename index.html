@@ -9,12 +9,21 @@
     </head>
     <body>
         <header>
-            <h1>Anderson Bucchianico's Projects</h1>
-            <nav>                
-                <a class="donate-link" href="bitcoin:bc1qnfvnpws08wkqyvtlt39aqh67r8vefrm0ylnzxw?time=1644582931">Help-me buying a cup of cofffe!</a>
-            </nav>
+            <section class="site-header">
+                <h1>Anderson Bucchianico Website</h1>
+                <div class="donate">                
+                    <a class="donate-link" href="bitcoin:bc1qnfvnpws08wkqyvtlt39aqh67r8vefrm0ylnzxw?time=1644582931">Help-me buying a cup of cofffe!</a>
+                </div>
+            </section>
+            <section class="article-header">
+                <nav>
+
+                </nav>
+            </section>
         </header>
-        <ul class="projects-list"></ul>
+        <article>
+            <ul class="projects-list"></ul>
+        </article>
 
         <footer>
             <section class="footer-list">
@@ -43,6 +52,10 @@
         </footer>
     </body>
 
+    <template id="page-button">
+        <button class="page-button" onclick="changePage(event)">Lorem Ipsum</button>
+    </template>
+
     <template id="card">
         <li class="card-body">
             <section class="card-image"></section>
@@ -58,6 +71,14 @@
                 </div>
             </section>
         </li>
+    </template>
+
+    <template id="blog-post">
+        <article>
+            <h3 class="blog-post-title"> </h3>
+            <img class="blog-post-img"/>
+            <span class="blog-post-date"></span>
+        </article>
     </template>
 
     <script src="main.js"></script>

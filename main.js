@@ -30,15 +30,50 @@ function createProjectItem(databaseItem) {
     return newCard;
 }
 
+function createBlogItem(databaseItem) {
+    let newPost = document.importNode(document.querySelector("template#blog-post").content,true);
+
+    newPost.querySelector(".blog-post-title").innerText = databaseItem.name;
+    return newPost;
+}
+
+function createNewItem(item, itemType) {
+    if (itemType === "project") {
+        return createProjectItem(item);
+    } else {
+        return createBlogItem(item);
+    }
+}
+
+function changePage(event) {
+    document.querySelector(".article-header").style.backgroundImage = `url(${event.target.dataset.bkg})`;
+    Array.from(event.target.parentElement.children).forEach( button => {
+        button.classList.remove('active');
+    });
+    event.target.classList.add('active');
+
+    let newArticle = document.querySelector("article");
+    newArticle.firstElementChild.innerHTML = "";
+    event.target.article.forEach( (item) => {
+        newArticle.querySelector("ul").appendChild(createNewItem(item, event.target.itemType));
+    });
+}
+
 async function initialize() {
     getDatabase().then( response => {
-
         database = JSON.parse(response);
-        let projectList = document.querySelector("ul");
-    
-        database.forEach( (item) => {
-            projectList.appendChild(createProjectItem(item));
+        let articleHeader = document.querySelector("nav");
+        
+        Object.keys(database).forEach( page => {
+            let newButton = document.importNode(document.querySelector("template#page-button").content,true);
+            newButton.firstElementChild.innerText = database[page].title;
+            newButton.firstElementChild.dataset['bkg'] = database[page].background;
+            newButton.firstElementChild.itemType = database[page].itemType;
+            newButton.firstElementChild.article = database[page].items;
+            articleHeader.appendChild(newButton.firstElementChild);
         });
+
+        document.querySelector("nav").firstElementChild.dispatchEvent(new CustomEvent("click", {}));
     });
 }
 
