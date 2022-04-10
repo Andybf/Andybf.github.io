@@ -49,6 +49,36 @@ body {
     width: 100%;
 }
 
+.donate-subcontainer {
+    position: absolute;
+    display: none;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.donate-screen {
+    display: flex;
+    position: fixed;
+    row-gap: 2rem;
+    border-radius: 10px;
+    top: 33ch;
+    left: 25%;
+    width: 50%;
+    height: 33vh;
+    background-color: #000000ad;
+    backdrop-filter: blur(12px);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.dark-background{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #0000009c;
+}
+
 header > .site-header {
     background-color: var(--global-interface-background);
     padding: 1.25rem;
@@ -56,11 +86,13 @@ header > .site-header {
     justify-content: space-between;
 }
 
-header > .site-header > div.donate > a {
+header > .site-header > div.donate-container > button {
     font-size: 10pt;
-    padding: 12px;
     border-radius: 10px;
     background-color: var(--second-interface-background);
+    padding: 4px 12px;
+    border: none;
+    cursor: pointer;
 }
 
 h1 {
@@ -93,7 +125,7 @@ button.page-button {
     border-right: 1px solid white;
     cursor: pointer;
 }
-button.page-button:hover {
+button.page-button:active {
     background: #ffffff24;
 }
 button.active {
@@ -104,7 +136,7 @@ article {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 1rem;
+    margin-top: 3rem;
 }
 
 .projects-list {
@@ -117,7 +149,7 @@ article {
     overflow: hidden;
     display: flex;
     transition: 0.5s;
-    height: 50vh;
+    min-height: 50vh;
     flex-direction: row-reverse;
 }
 
@@ -167,6 +199,7 @@ article {
     font-size: 10pt;
     align-items: center;
     flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .card-tags > span {
@@ -310,9 +343,14 @@ figcaption {
     font-size: 11pt;
 }
 
-@media(max-width: 1024px) {
-    div.donate {
+@media(max-width: 768px) {
+    div.donate-container {
         display: none;
+    }
+
+    nav > button.page-button {
+        font-size: 11pt;
+        padding: 0rem 2rem;
     }
 
     .projects-list {
@@ -321,7 +359,6 @@ figcaption {
 
     .card-body {
         flex-direction: column;
-        height: 75vh;
     }
     .card-body:nth-child(even) {
         flex-direction: column;
@@ -329,7 +366,7 @@ figcaption {
 
     .card-image {
         width: auto;
-        height: 100%;
+        height: 33vh;
         padding: 0;
     }
 

@@ -1,11 +1,45 @@
+/*
+ * andybf.github.io
+ * Created by: Anderson Bucchianico
+*/
+
+async function initialize() {
+    getDatabase().then( response => {
+        database = JSON.parse(response);
+        let articleHeader = document.querySelector("nav");
+        
+        Object.keys(database['content']).forEach( page => {
+            let newButton = document.importNode(document.querySelector("template#page-button").content,true);
+            newButton.firstElementChild.innerText = database['content'][page].title;
+            newButton.firstElementChild.dataset['bkg'] = database['content'][page].background;
+            newButton.firstElementChild.itemType = database['content'][page].itemType;
+            newButton.firstElementChild.article = database['content'][page].items;
+            articleHeader.appendChild(newButton.firstElementChild);
+        });
+        document.querySelector("nav").firstElementChild.dispatchEvent(new CustomEvent("click", {}));
+    });
+}
+
 async function getDatabase() {
-    
-    response = await fetch("./database.json");
+    let language = navigator.language;
+    if (language != 'en-US' && language != 'pt-BR') {
+        language = 'en-US';
+    }
+    let database = `./database-${language}.json`;
+    response = await fetch(database);
     if (response.status == 200 || response.statusText == 'OK') {
         return await response.text();
     } else {
         return `[ERROR] Database not found. code ${response.status}: ${response.statusText}`;
     }
+}
+
+function translateInterface(strings) {
+    Object.keys(strings).forEach( string => {
+        document.querySelectorAll(`.${string}`).forEach(element => {
+            element.innerText = strings[string];
+        });
+    });
 }
 
 function createProjectItem(databaseItem) {
@@ -57,24 +91,12 @@ function changePage(event) {
     event.target.article.forEach( (item) => {
         newArticle.querySelector("ul").appendChild(createNewItem(item, event.target.itemType));
     });
+    translateInterface(database.interface);
 }
 
-async function initialize() {
-    getDatabase().then( response => {
-        database = JSON.parse(response);
-        let articleHeader = document.querySelector("nav");
-        
-        Object.keys(database).forEach( page => {
-            let newButton = document.importNode(document.querySelector("template#page-button").content,true);
-            newButton.firstElementChild.innerText = database[page].title;
-            newButton.firstElementChild.dataset['bkg'] = database[page].background;
-            newButton.firstElementChild.itemType = database[page].itemType;
-            newButton.firstElementChild.article = database[page].items;
-            articleHeader.appendChild(newButton.firstElementChild);
-        });
-
-        document.querySelector("nav").firstElementChild.dispatchEvent(new CustomEvent("click", {}));
-    });
+function toggleDonateScreen() {
+    let donate = document.querySelector(".donate-subcontainer").style;
+    donate.display = (donate.display == 'flex') ? 'none' : 'flex';
 }
 
 initialize();

@@ -11,8 +11,11 @@
         <header>
             <section class="site-header">
                 <h1>Anderson Bucchianico Website</h1>
-                <div class="donate">                
-                    <a class="donate-link" href="bitcoin:bc1qnfvnpws08wkqyvtlt39aqh67r8vefrm0ylnzxw?time=1644582931">Help-me buying a cup of cofffe!</a>
+                <div class="flags">
+
+                </div>
+                <div class="donate-container">
+                    <button class="donate" onclick="toggleDonateScreen(event)">#</button>
                 </div>
             </section>
             <section class="article-header">
@@ -30,15 +33,15 @@
                 <ul>
                     <li>
                         <img class="footer-icon" src="/media/icons/GitHub.svg"/>
-                        <a href="https://github.com/Andybf">Take a look at my Github repository</a>
+                        <a class="lookAtGitHub" href="https://github.com/Andybf">#</a>
                     </li>
                     <li>
                         <img class="footer-icon" src="/media/icons/email.svg"/>
-                        <a href="mailto:anderson584bf@gmail.com">Contact me by email, tell me something you want to share!</a>
+                        <a class="contactEmail" href="mailto:anderson584bf@gmail.com">#</a>
                     </li>
                     <li>
                         <img class="footer-icon" src="/media/icons/bitcoin.svg"/>
-                        <a href="bitcoin:bc1qnfvnpws08wkqyvtlt39aqh67r8vefrm0ylnzxw?time=1644582931">Buy-me a cup of cofffe! Help me to create new cool things</a> 
+                        <a class="bitcoin" href="bitcoin:bc1qnfvnpws08wkqyvtlt39aqh67r8vefrm0ylnzxw?time=1644582931">#</a> 
                     </li>
                 </ul>
                 <figure>
@@ -50,10 +53,18 @@
                 <span>2022 @ Anderson Bucchianico</span>
             </section>
         </footer>
+
+        <section class="donate-subcontainer" onclick="toggleDonateScreen()">
+            <div class="dark-background"></div>
+            <div class="donate-screen">
+                <img src="/media/icons/qrcode.png"/>
+                <figcaption>bc1qnfvnpws08wkqyvtlt39aqh67r8vefrm0ylnzxw</figcaption>
+            </div>
+        </section>
     </body>
 
     <template id="page-button">
-        <button class="page-button" onclick="changePage(event)">Lorem Ipsum</button>
+        <button class="page-button" onclick="changePage(event)">#</button>
     </template>
 
     <template id="card">
@@ -63,11 +74,11 @@
                 <h2 class="card-title"></h2>
                 <p class="card-description"></p>
                 <div class="card-tags">
-                    <div>Tecnologies used:</div>
+                    <div class="tecnologies">#</div>
                 </div>
                 <div class="card-buttons">
-                    <a class="card-button" id="live-demo" disabled="true">Live Demo</a>
-                    <a class="card-button" id="view-source" disabled="true">View Source</a>
+                    <a class="card-button liveDemo" id="live-demo" disabled="true">#</a>
+                    <a class="card-button viewSource" id="view-source" disabled="true">#</a>
                 </div>
             </section>
         </li>
