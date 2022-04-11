@@ -48,6 +48,7 @@ function createProjectItem(databaseItem) {
 
     newCard.querySelector(".card-image").style.backgroundImage = `url(${databaseItem.imgSrc})`;
     newCard.querySelector(".card-title").innerText = databaseItem.name;
+    newCard.querySelector(".card-category").innerText = databaseItem.category;
     newCard.querySelector(".card-description").innerText = databaseItem.description;
     let cardTags = newCard.querySelector(".card-tags");
     databaseItem.languages.forEach( language => {

@@ -16,6 +16,7 @@
             "items" : [
                 {
                     "name" : "Free Web Kanban",
+                    "category" : "Task manager",
                     "imgSrc" : "/media/img/en-US/freewebkanban.png",
                     "description" : "A open source application for organizing projects based on the Kanban model.",
                     "languages" : ["JavaScript","HTML","CSS","Service Worker API"],
@@ -27,6 +28,7 @@
                 },
                 {
                     "name" : "PaintSpace",
+                    "category" : "Photo editing and drawning tool",
                     "imgSrc" : "/media/img/en-US/paintspace.png",
                     "description" : "This single page application allow the possibility to create drawnings, paintings, edit images, play with geometrical forms, mess with the color pallete and much more, everything is simple and straight to the point Try now and unleash your creativity.",
                     "languages" : ["HTML","CSS","JavaScript","Canvas API"],
@@ -38,6 +40,7 @@
                 },
                 {
                     "name" : "Falling Blocks",
+                    "category" : "Game",
                     "imgSrc" : "/media/img/en-US/fallingblocks.png",
                     "description" : "A simple, but more complex implementation of a game written in C with help of OpenGL. Basically consists of a mechanic where the player needs to dodge falling objects, the more objects the player avoids, the more points he earns.",
                     "languages" : ["C","C++","OpenGL"],
@@ -49,6 +52,7 @@
                 },
                 {
                     "name" : "Mandelbrot Experiment",
+                    "category" : "Visual Esperiment",
                     "imgSrc" : "/media/img/en-US/mandelbrot.png",
                     "description" : "The famous experiment of Mandelbrot set creates an very interesting and very, very, very complex image by doing some math and drawing the result on the cartesian plane.",
                     "languages" : ["JavaScript","HTML","CSS","Canvas API"],
@@ -60,6 +64,7 @@
                 },
                 {
                     "name" : "AtomBiosEditor",
+                    "category" : "Firmware editor",
                     "imgSrc" : "/media/img/en-US/atombios.png",
                     "description" : "A graphics card firmware editor, making possible to perform extreme overclocks on the board, focused on editing AMD GPU's BIOS released between 2011 and 2015, works only on macOS system.",
                     "languages" : ["Objective-C","C++","C"],
@@ -71,6 +76,7 @@
                 },
                 {
                     "name" : "SnakeGame",
+                    "category" : "Game",
                     "imgSrc" : "/media/img/en-US/snakegame.png",
                     "description" : "A very simple old game, but recreated with the help of C language combined with OpenGL, no engines were used, the objective is very clear, eat as more as you can, without touching anything else.",
                     "languages" : ["C","C++","OpenGL"],
@@ -82,6 +88,7 @@
                 },
                 {
                     "name" : "Andromeda Project",
+                    "category" : "Game",
                     "imgSrc" : "/media/img/en-US/andromeda.png",
                     "description" : "One of the first tries to develop a working game, it turns out to be a complete mess in his final stages of development, it doesn't even have an appropriate name, but it has a codename Andromeda.",
                     "languages" : ["Java","Swing"],
