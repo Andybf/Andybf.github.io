@@ -13,6 +13,13 @@
             "title" : "My Projects",
             "background" : "/media/img/interface/blueprint.jpeg",
             "itemType" : "project",
+            "description" : [
+                "Welcome!",
+                "Here you'll find some of the projects I've been working on independently, things for fun and a willingness to experiment.",
+                "Sometimes there is some ideas that come up (many of them are really bad, of course...), but some are so curious that the desire to work more on them arises until they end up materializing and becoming a prototype.",
+                "You can try out the prototypes through the 'Try it' button, or if you want, view the source code through the 'Source code' button to open the hood of the machines and see how they work.",
+                "Enjoy yourself!"
+            ],
             "items" : [
                 {
                     "name" : "Free Web Kanban",
@@ -28,7 +35,7 @@
                 },
                 {
                     "name" : "PaintSpace",
-                    "category" : "Photo editing and drawning tool",
+                    "category" : "Photo editing and drawing tool",
                     "imgSrc" : "/media/img/en-US/paintspace.png",
                     "description" : "This single page application allow the possibility to create drawnings, paintings, edit images, play with geometrical forms, mess with the color pallete and much more, everything is simple and straight to the point Try now and unleash your creativity.",
                     "languages" : ["HTML","CSS","JavaScript","Canvas API"],
@@ -40,7 +47,7 @@
                 },
                 {
                     "name" : "Falling Blocks",
-                    "category" : "Game",
+                    "category" : "Game with graphics acceleration",
                     "imgSrc" : "/media/img/en-US/fallingblocks.png",
                     "description" : "A simple, but more complex implementation of a game written in C with help of OpenGL. Basically consists of a mechanic where the player needs to dodge falling objects, the more objects the player avoids, the more points he earns.",
                     "languages" : ["C","C++","OpenGL"],
@@ -52,7 +59,7 @@
                 },
                 {
                     "name" : "Mandelbrot Experiment",
-                    "category" : "Visual Esperiment",
+                    "category" : "Visual Experiment",
                     "imgSrc" : "/media/img/en-US/mandelbrot.png",
                     "description" : "The famous experiment of Mandelbrot set creates an very interesting and very, very, very complex image by doing some math and drawing the result on the cartesian plane.",
                     "languages" : ["JavaScript","HTML","CSS","Canvas API"],
@@ -76,7 +83,7 @@
                 },
                 {
                     "name" : "SnakeGame",
-                    "category" : "Game",
+                    "category" : "Game with graphics acceleration",
                     "imgSrc" : "/media/img/en-US/snakegame.png",
                     "description" : "A very simple old game, but recreated with the help of C language combined with OpenGL, no engines were used, the objective is very clear, eat as more as you can, without touching anything else.",
                     "languages" : ["C","C++","OpenGL"],
@@ -88,11 +95,23 @@
                 },
                 {
                     "name" : "Andromeda Project",
-                    "category" : "Game",
+                    "category" : "Java based game",
                     "imgSrc" : "/media/img/en-US/andromeda.png",
                     "description" : "One of the first tries to develop a working game, it turns out to be a complete mess in his final stages of development, it doesn't even have an appropriate name, but it has a codename Andromeda.",
                     "languages" : ["Java","Swing"],
                     "link" : "https://github.com/Andybf/AndromedaProject",
+                    "linkLiveDemo" : "/",
+                    "isLiveDemoEnabled" : false,
+                    "isViewSourceEnabled" : true,
+                    "isVisible" : false
+                },
+                {
+                    "name" : "Anderson Bucchianico Website",
+                    "category" : "Personal website",
+                    "imgSrc" : "/media/img/en-US/website.png",
+                    "description" : "This website you are using now, developed from scratch, with the aim of housing projects and articles about technology.",
+                    "languages" : ["HTML","CSS","JavaScript","JSON"],
+                    "link" : "https://github.com/Andybf/andybf.github.io",
                     "linkLiveDemo" : "/",
                     "isLiveDemoEnabled" : false,
                     "isViewSourceEnabled" : true,
@@ -104,6 +123,9 @@
             "title" : "Blog",
             "background" : "/media/img/interface/typewritter.jpeg",
             "itemType" : "blog-post",
+            "description" : [
+                "Comming soon"
+            ],
             "items" : [
                 {
                     "name" : "Comming soon"

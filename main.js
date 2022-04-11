@@ -12,6 +12,7 @@ async function initialize() {
             let newButton = document.importNode(document.querySelector("template#page-button").content,true);
             newButton.firstElementChild.innerText = database['content'][page].title;
             newButton.firstElementChild.dataset['bkg'] = database['content'][page].background;
+            newButton.firstElementChild.description = database['content'][page].description;
             newButton.firstElementChild.itemType = database['content'][page].itemType;
             newButton.firstElementChild.article = database['content'][page].items;
             articleHeader.appendChild(newButton.firstElementChild);
@@ -34,16 +35,7 @@ async function getDatabase() {
     }
 }
 
-function translateInterface(strings) {
-    Object.keys(strings).forEach( string => {
-        document.querySelectorAll(`.${string}`).forEach(element => {
-            element.innerText = strings[string];
-        });
-    });
-}
-
 function createProjectItem(databaseItem) {
-
     let newCard = document.importNode(document.querySelector("template#card").content,true);
 
     newCard.querySelector(".card-image").style.backgroundImage = `url(${databaseItem.imgSrc})`;
@@ -86,13 +78,28 @@ function changePage(event) {
         button.classList.remove('active');
     });
     event.target.classList.add('active');
-
     let newArticle = document.querySelector("article");
     newArticle.firstElementChild.innerHTML = "";
+
+    event.target.description.forEach( paragraph => {
+        let newParagraph = document.createElement("P"); 
+        newParagraph.classList.add("paragraph-description");
+        newParagraph.innerText = paragraph;
+        document.querySelector(".page-description").appendChild(newParagraph);
+    });
+    newArticle.querySelector("ul").innerHTML = "";
     event.target.article.forEach( (item) => {
         newArticle.querySelector("ul").appendChild(createNewItem(item, event.target.itemType));
     });
     translateInterface(database.interface);
+}
+
+function translateInterface(strings) {
+    Object.keys(strings).forEach( string => {
+        document.querySelectorAll(`.${string}`).forEach(element => {
+            element.innerText = strings[string];
+        });
+    });
 }
 
 function toggleDonateScreen() {

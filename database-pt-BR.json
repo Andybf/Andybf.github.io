@@ -13,11 +13,18 @@
             "title" : "Meus Projetos",
             "background" : "/media/img/interface/blueprint.jpeg",
             "itemType" : "project",
+            "description" : [
+                "Seja bem-vindo(a)!",
+                "Aqui você encontrará alguns dos projetos que venho trabalhando de forma independente, movidos por por diversão e vontade de experimentar coisas.",
+                "De vez em quando surge algumas ideias, (muitas delas são ruins, é claro...), mas algumas são tão curiosas que surge a vontade de trabalhar mais em cima delas até que acabam se materializando e tornando-se um protótipo.",
+                "Você pode experimentar os protótipos através do botão 'Experimente', ou se quiser, ver o código fonte através do botão 'Código fonte' para abrir o capô das máquinas e observar como elas funcionam.",
+                "Divirta-se!"
+            ],
             "items" : [
                 {
                     "name" : "Free Web Kanban",
                     "category" : "Gerenciador de tarefas",
-                    "imgSrc" : "/media/img/en-US/freewebkanban.png",
+                    "imgSrc" : "/media/img/pt-BR/freewebkanban.png",
                     "description" : "Uma aplicação web de código aberto para organizar diferentes tipos de projetos baseada no modelo de Kanban.",
                     "languages" : ["JavaScript","HTML","CSS","Service Worker API"],
                     "link" : "https://github.com/Andybf/FreeWebKanban/",
@@ -97,6 +104,18 @@
                     "isLiveDemoEnabled" : false,
                     "isViewSourceEnabled" : true,
                     "isVisible" : false
+                },
+                {
+                    "name" : "Anderson Bucchianico Website",
+                    "category" : "Blog pessoal",
+                    "imgSrc" : "/media/img/pt-BR/website.png",
+                    "description" : "O próprio website que você está ultilizando agora, desenvolvido do zero, com o objetivo de abrigar projetos e artigos sobre tecnologia.",
+                    "languages" : ["HTML","CSS","JavaScript","JSON"],
+                    "link" : "https://github.com/Andybf/andybf.github.io",
+                    "linkLiveDemo" : "/",
+                    "isLiveDemoEnabled" : false,
+                    "isViewSourceEnabled" : true,
+                    "isVisible" : false
                 }
             ]
         },
@@ -104,6 +123,9 @@
             "title" : "Blog",
             "background" : "/media/img/interface/typewritter.jpeg",
             "itemType" : "blog-post",
+            "description" : [
+                "em breve"
+            ],
             "items" : [
                 {
                     "name" : "Em breve"
