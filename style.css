@@ -2,8 +2,8 @@
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    font-family: var(--global-font-family);
-    color: var(--global-font-color);
+    font-family: var(--font-family);
+    color: var(--first-font-color);
     text-decoration: none;
 }
 
@@ -22,30 +22,53 @@
     src: url('./media/fonts/lato/Lato-Heavy.ttf');
 }
 
-.light-theme {
-    --global-background: #dadada;
-    --global-interface-background: #f1f1f1;
-    --second-interface-background: rgb(228, 228, 228);
-    --global-font-family: 'LeagueSpartan';
-    --global-box-shadow : 0 0px 6px 5px #0000001a;
-    --global-link-font-color: #636363;
-    --global-font-color: #333;
-    --global-font-size: 11pt;
-}
+@media(prefers-color-scheme: dark) {
+    .dynamic-theme {
+        --first-background: #393939;
+        --second-background: #2b2b2b;
+        --translucent-background: #00000069;
 
-.dark-theme {
-    --global-background: #141414;
-    --global-interface-background: #393939;
-    --second-interface-background: #2b2b2b;
-    --global-font-family: 'LeagueSpartan';
-    --global-box-shadow: 0 0px 6px 5px #ff0000;
-    --global-link-font-color: #636363;
-    --global-font-color: #fff;
-    --global-font-size: 11pt;
+        --first-green-tone: #2b9852;
+        --second-green-tone: #1f723c;
+        --first-blue-tone: #5557b3;
+        --second-blue-tone: #383996;
+
+        --image-brightness : brightness(0.6);
+        --box-shadow: 0 0px 6px 5px #ff0000;
+        --invert-color-icon: invert(1);
+        --background-blend-mode: unset;
+
+        --font-family: 'LeagueSpartan';
+        --second-font-color: #ffffff;
+        --first-font-color: #fff;
+        --font-size: 11pt;
+    }
+}
+@media(prefers-color-scheme: light) {
+    .dynamic-theme {
+        --first-background: #E7EAED;
+        --second-background: #FFFFFF;
+        --translucent-background: #FFFFFF69;
+
+        --first-green-tone: #4fb373;
+        --second-green-tone: #93d6ab;
+        --first-blue-tone: #6466dc;
+        --second-blue-tone: #8081cc;
+
+        --image-brightness : brightness(1.2);
+        --box-shadow : 0 0px 6px 5px #0000001a;
+        --invert-color-icon: invert(0);
+        --background-blend-mode: lighten;
+
+        --font-family: 'OpenSans';
+        --second-font-color: #ffffff;
+        --first-font-color: #4e4e4e;
+        --font-size: 11pt;
+    }
 }
 
 body {
-    background-color: var(--global-background);
+    background-color: var(--first-background);
     width: 100%;
 }
 
@@ -66,8 +89,7 @@ body {
     left: 25%;
     width: 50%;
     height: 33vh;
-    background-color: #000000ad;
-    backdrop-filter: blur(12px);
+    background-color: var(--second-background);
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -76,11 +98,12 @@ body {
     position: fixed;
     width: 100%;
     height: 100%;
-    background-color: #0000009c;
+    backdrop-filter: blur(20px);
+    background-color: var(--translucent-background);;
 }
 
 header > .site-header {
-    background-color: var(--global-interface-background);
+    background-color: var(--first-background);
     padding: 1.25rem;
     display: flex;
     justify-content: space-between;
@@ -89,7 +112,7 @@ header > .site-header {
 header > .site-header > div.donate-container > button {
     font-size: 10pt;
     border-radius: 10px;
-    background-color: var(--second-interface-background);
+    background-color: var(--second-background);
     padding: 4px 12px;
     border: none;
     cursor: pointer;
@@ -102,7 +125,7 @@ h1 {
 nav {
     display: flex;
     width: 100%;
-    background: #00000069;
+    background: var(--translucent-background);
     backdrop-filter: blur(12px);
     height: 50px;
     align-items: center;
@@ -113,8 +136,9 @@ section.article-header {
     width: 100%;
     display: flex;
     align-items: flex-end;
-    background-color: #739bcc;
+    background-color: #ffffff57;
     background-position: center;
+    background-blend-mode: var(--background-blend-mode);
 }
 button.page-button {
     padding: 0rem 3rem;
@@ -129,7 +153,7 @@ button.page-button:active {
     background: #ffffff24;
 }
 button.active {
-    background: #141414;
+    background: var(--first-background);
 }
 
 article {
@@ -165,7 +189,7 @@ article {
     width: 60%;
     background-size: cover;
     background-repeat: no-repeat;
-    filter: brightness(0.6);
+    filter: var(--image-brightness);
 }
 
 .card-details {
@@ -173,7 +197,7 @@ article {
     display: grid;
     row-gap: 1rem;
     user-select: none;
-    background: #2b2b2b;
+    background: var(--second-background);
     width: 40%;
     align-items: center;
 }
@@ -185,7 +209,7 @@ article {
 }
 
 .card-description {
-    font-size: var(--global-font-size);
+    font-size: var(--font-size);
     font-family: "OpenSans";
     text-align: justify;
 }
@@ -250,6 +274,7 @@ span[value='OpenGL'] {
     align-items: center;
     transition: .25s;
     justify-content: center;
+    color: var(--second-font-color);
 }
 .card-button[disabled='true'] {
     background-color: grey !important;
@@ -266,11 +291,11 @@ span[value='OpenGL'] {
     line-height: 0px;
 }
 #live-demo {
-    background-color: #2b9852;
-    border: 5px solid #1f723c;
+    background-color: var(--first-green-tone);
+    border: 5px solid var(--second-green-tone);
 }
 #live-demo:hover {
-    background-color: #1f723c;
+    background-color: var(--second-green-tone);;
 }
 
 #view-source::before {
@@ -278,24 +303,24 @@ span[value='OpenGL'] {
     padding-right: 10px;
 }
 #view-source {
-    background-color: #5153ca;
-    border: 5px solid #383996;
+    background-color: var(--first-blue-tone);
+    border: 5px solid var(--second-blue-tone);;
 }
 #view-source:hover {
-    background-color: #383996;
+    background-color: var(--second-blue-tone);
 }
 
 footer {
     display: flex;
     margin-top: 5rem;
-    background-color: var(--global-interface-background);
+    background-color: var(--first-background);
     flex-direction: column;
 }
 
 .footer-list {
     display: flex;
     padding: 3rem 4rem;
-    background-color: var(--second-interface-background);
+    background-color: var(--second-background);
     justify-content: space-between;
 }
 
@@ -318,7 +343,7 @@ footer {
 
 img.footer-icon {
     height: 20px;
-    filter: invert(1);
+    filter: var(--invert-color-icon);
 }
 
 figure {
@@ -376,7 +401,7 @@ figcaption {
         width: inherit;
         padding: 1rem;
         display: flex;
-        row-gap: 1rem;
+        row-gap: 2rem;
         flex-direction: column;
         align-items: flex-start;
     }
