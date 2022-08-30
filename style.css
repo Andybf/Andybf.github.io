@@ -72,38 +72,8 @@ body {
     width: 100%;
 }
 
-.donate-subcontainer {
-    position: absolute;
-    display: none;
-    top: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.donate-screen {
-    display: flex;
-    position: fixed;
-    row-gap: 2rem;
-    border-radius: 10px;
-    top: 33ch;
-    left: 25%;
-    width: 50%;
-    height: 33vh;
-    background-color: var(--second-background);
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.dark-background{
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    backdrop-filter: blur(20px);
-    background-color: var(--translucent-background);;
-}
-
 header > .site-header {
-    background-color: var(--first-background);
+    background-color: var(--second-background);
     padding: 1.25rem;
     display: flex;
     justify-content: space-between;
@@ -112,7 +82,7 @@ header > .site-header {
 header > .site-header > div.donate-container > button {
     font-size: 10pt;
     border-radius: 10px;
-    background-color: var(--second-background);
+    background-color: var(--first-background);
     padding: 4px 12px;
     border: none;
     cursor: pointer;
@@ -122,52 +92,28 @@ h1 {
     font-size: 16pt;
 }
 
-nav {
-    display: flex;
-    width: 100%;
-    background: var(--translucent-background);
-    backdrop-filter: blur(12px);
-    height: 50px;
-    align-items: center;
+h2.page-button {
+    padding-left: 3rem;
 }
 
-section.article-header {
-    height: 20vh;
-    width: 100%;
-    display: flex;
-    align-items: flex-end;
-    background-color: #ffffff57;
-    background-position: center;
-    background-blend-mode: var(--background-blend-mode);
-}
-button.page-button {
-    padding: 0rem 3rem;
-    height: 100%;
-    font-size: 14pt;
-    border: none;
-    background-color: transparent;
-    border-right: 1px solid white;
-    cursor: pointer;
-}
-button.page-button:active {
-    background: #ffffff24;
-}
 button.active {
     background: var(--first-background);
 }
 
 article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    justify-content: center;
+    row-gap: 2rem;
+    margin: auto;
     margin-top: 3rem;
+    width: 85vw;
+    flex-direction: column;
 }
 
 .page-description {
     text-align: justify;
     line-height: 25px;
     background-color:  var(--second-background);
-    width: 75vw;
     padding: 2rem 0;
     margin-bottom: 2rem;
     row-gap: 1rem;
@@ -181,7 +127,6 @@ article {
 .projects-list {
     display: grid;
     row-gap: 3rem;
-    width: 75vw;
 }
 
 .card-body {

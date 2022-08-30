@@ -6,18 +6,10 @@
 async function initialize() {
     getDatabase().then( response => {
         database = JSON.parse(response);
-        let articleHeader = document.querySelector("nav");
         
-        Object.keys(database['content']).forEach( page => {
-            let newButton = document.importNode(document.querySelector("template#page-button").content,true);
-            newButton.firstElementChild.innerText = database['content'][page].title;
-            newButton.firstElementChild.dataset['bkg'] = database['content'][page].background;
-            newButton.firstElementChild.description = database['content'][page].description;
-            newButton.firstElementChild.itemType = database['content'][page].itemType;
-            newButton.firstElementChild.article = database['content'][page].items;
-            articleHeader.appendChild(newButton.firstElementChild);
-        });
-        document.querySelector("nav").firstElementChild.dispatchEvent(new CustomEvent("click", {}));
+        let newButton = document.querySelector(".page-button");
+        newButton.innerText = database['content'].title;
+        changePage(database['content']);
     });
 }
 
@@ -57,39 +49,19 @@ function createProjectItem(databaseItem) {
     return newCard;
 }
 
-function createBlogItem(databaseItem) {
-    let newPost = document.importNode(document.querySelector("template#blog-post").content,true);
+function changePage(page) {
+    let projectsList = document.querySelector("#projects-list");
 
-    newPost.querySelector(".blog-post-title").innerText = databaseItem.name;
-    return newPost;
-}
-
-function createNewItem(item, itemType) {
-    if (itemType === "project") {
-        return createProjectItem(item);
-    } else {
-        return createBlogItem(item);
-    }
-}
-
-function changePage(event) {
-    document.querySelector(".article-header").style.backgroundImage = `url(${event.target.dataset.bkg})`;
-    Array.from(event.target.parentElement.children).forEach( button => {
-        button.classList.remove('active');
-    });
-    event.target.classList.add('active');
-    let newArticle = document.querySelector("article");
-    newArticle.firstElementChild.innerHTML = "";
-
-    event.target.description.forEach( paragraph => {
+    page.description.forEach( paragraph => {
         let newParagraph = document.createElement("P"); 
         newParagraph.classList.add("paragraph-description");
         newParagraph.innerText = paragraph;
         document.querySelector(".page-description").appendChild(newParagraph);
     });
-    newArticle.querySelector("ul").innerHTML = "";
-    event.target.article.forEach( (item) => {
-        newArticle.querySelector("ul").appendChild(createNewItem(item, event.target.itemType));
+    page.items.forEach( (item) => {
+        if (item.isVisible) {
+            projectsList.appendChild(createProjectItem(item));
+        }
     });
     translateInterface(database.interface);
 }
@@ -103,8 +75,7 @@ function translateInterface(strings) {
 }
 
 function toggleDonateScreen() {
-    let donate = document.querySelector(".donate-subcontainer").style;
-    donate.display = (donate.display == 'flex') ? 'none' : 'flex';
+    window.scrollTo(0,document.body.scrollHeight)
 }
 
 initialize();

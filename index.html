@@ -18,15 +18,11 @@
                     <button class="donate" onclick="toggleDonateScreen(event)">#</button>
                 </div>
             </section>
-            <section class="article-header">
-                <nav>
-
-                </nav>
-            </section>
         </header>
         <article>
+            <h2 class="page-button">Placeholder</h2>
             <p class="page-description"></p>
-            <ul class="projects-list"></ul>
+            <ul id="projects-list" class="projects-list"></ul>
         </article>
 
         <footer>
@@ -42,31 +38,15 @@
                     </li>
                     <li>
                         <img class="footer-icon" src="/media/icons/bitcoin.svg"/>
-                        <a class="bitcoin" href="bitcoin:bc1qnfvnpws08wkqyvtlt39aqh67r8vefrm0ylnzxw?time=1644582931">#</a> 
+                        <a class="bitcoin" href="bitcoin:bc1qghe7dlwqatn40z6ryepy67qxf26xyx5p4knssd?message=personal-webpage-donations&time=1661887281">#</a> 
                     </li>
                 </ul>
-                <figure>
-                    <img src="/media/icons/qrcode.png"/>
-                    <figcaption>bc1qnfvnpws08wkqyvtlt39aqh67r8vefrm0ylnzxw</figcaption>
-                </figure>
             </section>
             <section class="bottom-footer">
-                <span>2022 @ Anderson Bucchianico</span>
+                <span>2022 - Anderson Bucchianico</span>
             </section>
         </footer>
-
-        <section class="donate-subcontainer" onclick="toggleDonateScreen()">
-            <div class="dark-background"></div>
-            <div class="donate-screen">
-                <img src="/media/icons/qrcode.png"/>
-                <figcaption>bc1qnfvnpws08wkqyvtlt39aqh67r8vefrm0ylnzxw</figcaption>
-            </div>
-        </section>
     </body>
-
-    <template id="page-button">
-        <button class="page-button" onclick="changePage(event)">#</button>
-    </template>
 
     <template id="card">
         <li class="card-body">
@@ -84,14 +64,6 @@
                 </div>
             </section>
         </li>
-    </template>
-
-    <template id="blog-post">
-        <article>
-            <h3 class="blog-post-title"> </h3>
-            <img class="blog-post-img"/>
-            <span class="blog-post-date"></span>
-        </article>
     </template>
 
     <script src="main.js"></script>
