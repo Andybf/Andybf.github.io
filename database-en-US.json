@@ -14,11 +14,24 @@
         "description" : [
             "Welcome!",
             "Here you'll find some of the projects I've been working on independently, things for fun and a willingness to experiment.",
-            "Sometimes there is some ideas that come up, but some are so curious that the desire to work more on them arises until they end up materializing and becoming a prototype.",
+            "Programming is an art, a new way of expressing oneself in the world, not only observing the result of various numbers being computed at all times, but in the way everything is roterized. Each script is unique, each programmer exposes how their logical mind works through code. The application may even be the same, but its internal structure will never be the same, (unless you copy disably) for the same functionality there are thousands of different ways to be implemented.",
             "You can try out the prototypes through the 'Try it' button, or if you want, view the source code through the 'Source code' button to open the hood of the machines and see how they work.",
+            "Keep in mind that every software shown in this site hava a PGLv3 license. And as prototypes, they come without any warranty of any kind.",
             "Enjoy yourself!"
         ],
         "items" : [
+            {
+                "name" : "Open Flappy",
+                "category" : "Web Game",
+                "imgSrc" : "/media/img/pt-BR/openflappy.png",
+                "description" : "A recreation from a famous game, Flappy Bird. Running directcly on your web browser, built to work on your cellphone or your computer, credits to <a href='https://zapsplat.com' target='_blank'>zapsplat.com</a> for the sound effects and <a href='https://opengameart.org/content/flappy-bird' target='_blank'>Peleila@opengameart.org</a> for the art. Thank you for the use availability of the material and check out their work!",
+                "languages" : ["JavaScript","HTML","Canvas API"],
+                "link" : "https://github.com/Andybf/OpenFlappy/",
+                "linkLiveDemo" : "https://andybf.github.io/OpenFlappy/",
+                "isLiveDemoEnabled" : true,
+                "isViewSourceEnabled" : true,
+                "isVisible" : true
+            },
             {
                 "name" : "Free Web Kanban",
                 "category" : "Task manager",
@@ -68,24 +81,24 @@
                 "isVisible" : true
             },
             {
-                "name" : "AtomBiosEditor",
-                "category" : "Firmware editor",
-                "imgSrc" : "/media/img/en-US/atombios.png",
-                "description" : "A graphics card firmware editor, making possible to perform extreme overclocks on the board, focused on editing AMD GPU's BIOS released between 2011 and 2015, works only on macOS system.",
-                "languages" : ["Objective-C","C++","C"],
-                "link" : "https://github.com/Andybf/AtomBiosEditor",
-                "linkLiveDemo" : "/",
-                "isLiveDemoEnabled" : false,
-                "isViewSourceEnabled" : true,
-                "isVisible" : true
-            },
-            {
                 "name" : "SnakeGame",
                 "category" : "Game with graphics acceleration",
                 "imgSrc" : "/media/img/en-US/snakegame.png",
                 "description" : "A very simple old game, but recreated with the help of C language combined with OpenGL, no engines were used, the objective is very clear, eat as more as you can, without touching anything else.",
                 "languages" : ["C","C++","OpenGL"],
                 "link" : "https://github.com/Andybf/SnakeGame",
+                "linkLiveDemo" : "/",
+                "isLiveDemoEnabled" : false,
+                "isViewSourceEnabled" : true,
+                "isVisible" : true
+            },
+            {
+                "name" : "AtomBiosEditor",
+                "category" : "Firmware editor",
+                "imgSrc" : "/media/img/en-US/atombios.png",
+                "description" : "A graphics card firmware editor, making possible to perform extreme overclocks on the board, focused on editing AMD GPU's BIOS released between 2011 and 2015, works only on macOS system.",
+                "languages" : ["Objective-C","C++","C"],
+                "link" : "https://github.com/Andybf/AtomBiosEditor",
                 "linkLiveDemo" : "/",
                 "isLiveDemoEnabled" : false,
                 "isViewSourceEnabled" : true,
