@@ -23,7 +23,7 @@
             {
                 "name" : "Open Flappy",
                 "category" : "Web Game",
-                "imgSrc" : "/media/img/pt-BR/openflappy.png",
+                "imgSrc" : "/media/img/en-US/flappy.png",
                 "description" : "A recreation from a famous game, Flappy Bird. Running directcly on your web browser, built to work on your cellphone or your computer, credits to <a href='https://zapsplat.com' target='_blank'>zapsplat.com</a> for the sound effects and <a href='https://opengameart.org/content/flappy-bird' target='_blank'>Peleila@opengameart.org</a> for the art. Thank you for the use availability of the material and check out their work!",
                 "languages" : ["JavaScript","HTML","Canvas API"],
                 "link" : "https://github.com/Andybf/OpenFlappy/",

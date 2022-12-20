@@ -23,7 +23,7 @@
             {
                 "name" : "Open Flappy",
                 "category" : "Jogo online",
-                "imgSrc" : "/media/img/en-US/openflappy.png",
+                "imgSrc" : "/media/img/en-US/flappy.png",
                 "description" : "Uma recriação do famoso jogo Flappy Bird, rodando diretamente do seu navegador, adaptado para funcionar no celular ou no computador. Créditos para <a href='https://zapsplat.com' target='_blank'>zapsplat.com</a> pelos efeitos sonoros e para <a href='https://opengameart.org/content/flappy-bird' target='_blank'>Peleila@opengameart.org</a> pela arte de jogo. Agradeço pela disponibilidade de uso do material e confira também o trabalho deles!",
                 "languages" : ["JavaScript","HTML","Canvas API"],
                 "link" : "https://github.com/Andybf/OpenFlappy/",
