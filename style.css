@@ -93,7 +93,7 @@ h1 {
 }
 
 h2.page-button {
-    padding-left: 3rem;
+    padding-left: 5%;
 }
 
 button.active {
@@ -157,8 +157,12 @@ article {
     display: grid;
     row-gap: 1rem;
     background: var(--second-background);
-    width: 40%;
+    width: 50%;
     align-items: center;
+}
+
+b {
+    color : #ff4848;
 }
 
 .card-title {
@@ -339,6 +343,10 @@ figcaption {
 }
 
 @media(max-width: 768px) {
+
+    article {
+        width : 96vw;
+    }
 
     .page-description {
         width: 100%;
