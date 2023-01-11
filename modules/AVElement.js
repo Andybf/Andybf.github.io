@@ -4,8 +4,7 @@
  * 
 */
 
-import MiniParser from './MiniCssParser.js'
-import AVutils from './AVutils.js'
+import AVutils from './AVutils.js';
 
 export default class AVElement extends HTMLElement {
 
