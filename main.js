@@ -36,11 +36,11 @@ function createProjectItem(databaseItem) {
     newCard.querySelector(".card-description").innerHTML = databaseItem.description;
     let cardTags = newCard.querySelector(".tecnologies-content");
     databaseItem.languages.forEach( language => {
-        cardTags.innerHTML += `<span value="${language}">${language}</span>`;
+        cardTags.innerHTML += `<span class='tag' value="${language}">${language}</span>`;
     });
     let cardDevices = newCard.querySelector(".devices-content");
     databaseItem.devices.forEach( device => {
-        cardDevices.innerHTML += `<span value="${device}">${device}</span>`;
+        cardDevices.innerHTML += `<span class='tag' value="${device}">${device}</span>`;
     });
     if (databaseItem.isLiveDemoEnabled) {
         newCard.querySelector("#live-demo").href = databaseItem.linkLiveDemo;
