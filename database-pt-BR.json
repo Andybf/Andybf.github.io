@@ -34,14 +34,14 @@
                 "isVisible" : true
             },
             {
-                "name" : "Free Web Kanban",
+                "name" : "KanbanWeb",
                 "category" : "Gerenciador de tarefas",
                 "imgSrc" : "/media/img/pt-BR/freewebkanban.png",
                 "description" : "<p>Uma aplicação web de código aberto para organizar diferentes tipos de projetos baseada no modelo de Kanban.<br>Há suporte para salvamento no navegador, exportar dados para o dispositivo, interface responsiva para mobile e desktop e tema dinânico.</p>",
                 "languages" : ["JavaScript","HTML","CSS","Service Worker API"],
                 "devices" : ["phones","tablets","desktops"],
-                "link" : "https://github.com/Andybf/FreeWebKanban/",
-                "linkLiveDemo" : "https://andybf.github.io/FreeWebKanban/",
+                "link" : "https://github.com/Andybf/KanbanWeb/",
+                "linkLiveDemo" : "https://andybf.github.io/KanbanWeb/",
                 "isLiveDemoEnabled" : true,
                 "isViewSourceEnabled" : true,
                 "isVisible" : true

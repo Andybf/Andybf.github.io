@@ -35,14 +35,14 @@
                 "isVisible" : true
             },
             {
-                "name" : "Free Web Kanban",
+                "name" : "KanbanWeb",
                 "category" : "Task manager",
                 "imgSrc" : "/media/img/en-US/freewebkanban.png",
                 "description" : "A open source application for organizing projects based on the Kanban model.<br>It has support for saving on browser, export to your device, responsive interface for mobile and desktop and dynamic theme.",
                 "languages" : ["JavaScript","HTML","CSS","Service Worker API"],
                 "devices" : ["phones","tablets","desktops"],
-                "link" : "https://github.com/Andybf/FreeWebKanban/",
-                "linkLiveDemo" : "https://andybf.github.io/FreeWebKanban/",
+                "link" : "https://github.com/Andybf/KanbanWeb/",
+                "linkLiveDemo" : "https://andybf.github.io/KanbanWeb/",
                 "isLiveDemoEnabled" : true,
                 "isViewSourceEnabled" : true,
                 "isVisible" : true
