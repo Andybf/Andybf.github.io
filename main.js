@@ -34,9 +34,13 @@ function createProjectItem(databaseItem) {
     newCard.querySelector(".card-title").innerText = databaseItem.name;
     newCard.querySelector(".card-category").innerText = databaseItem.category;
     newCard.querySelector(".card-description").innerHTML = databaseItem.description;
-    let cardTags = newCard.querySelector(".card-tags");
+    let cardTags = newCard.querySelector(".tecnologies-content");
     databaseItem.languages.forEach( language => {
         cardTags.innerHTML += `<span value="${language}">${language}</span>`;
+    });
+    let cardDevices = newCard.querySelector(".devices-content");
+    databaseItem.devices.forEach( device => {
+        cardDevices.innerHTML += `<span value="${device}">${device}</span>`;
     });
     if (databaseItem.isLiveDemoEnabled) {
         newCard.querySelector("#live-demo").href = databaseItem.linkLiveDemo;

@@ -155,7 +155,7 @@ article {
 .card-details {
     padding: 3rem;
     display: grid;
-    row-gap: 1rem;
+    row-gap: 1.50rem;
     background: var(--second-background);
     width: 50%;
     align-items: center;
@@ -176,22 +176,26 @@ b {
     font-family: "OpenSans";
     text-align: justify;
     line-height: 25px;
+    display: grid;
+    row-gap: 0.25rem;
 }
-.card-description > a {
+.card-description > p > a {
     color: #00aaff;
     text-decoration: underline;
 }
 
 .card-tags {
-    display: flex;
+    display: grid;
     row-gap: 1rem;
-    column-gap: 15px;
     font-size: 10pt;
-    align-items: center;
-    flex-wrap: wrap;
 }
 
-.card-tags > span {
+.card-tags-content {
+    display: flex;
+    column-gap: 0.5rem;
+}
+
+span {
     color: rgb(255, 255, 255);
     background-color: grey;
     padding: 3px 8px 1px 8px;
@@ -200,10 +204,10 @@ b {
 }
 
 span[value='JavaScript'] {
-    background-color: #dead06;
+    background-color: #c39706;
 }
 span[value='HTML'] {
-    background-color: #FC5E30;
+    background-color: #d75128;
 }
 span[value='CSS'] {
     background-color: #0075b3;
@@ -224,12 +228,26 @@ span[value='OpenGL'] {
     background-color: #458ab0;
 }
 
+span[value='desktops'] {
+    background-color: #5666a6;
+}
+span[value='consoles'] {
+    background-color: #966969;
+}
+span[value='tablets'] {
+    background-color: #747d83;
+}
+span[value='phones'] {
+    background-color: #63926f;
+}
+
 .card-buttons {
     display: flex;
     justify-content: center;
     align-items: center;
     column-gap: 2rem;
     width: 100%;
+    padding-top: 1.5rem;
 }
 
 .card-button {
