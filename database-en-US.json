@@ -25,7 +25,7 @@
                 "name" : "Perceptron",
                 "category" : "AI experiment",
                 "imgSrc" : "/media/img/en-US/perceptron.png",
-                "description" : "<p>The perceptron is one of the first algorithms created to simulate the behavior of human neurons. Originally created by Frank Rosenblatt in 1958.<p></p>Once trained in a supervised manner, the AI is capable of differentiating symbols and/or drawnings and group into two distinct groups. The drawings are captured on a retina system, and the light intensity is measured in each cell, each one keeps a memory of what was seen, and based on its memories it identifies shapes and classifies them in a binary way.</p><p><a href='https://wikipedia.org/wiki/Perceptron' target='_blank'>Read more about it</a></p>",
+                "description" : "<p>The perceptron is one of the first algorithms created to simulate the behavior of human neurons. Originally created by Frank Rosenblatt in 1958.<p></p>Once trained in a supervised manner, the AI is capable of differentiating symbols and/or drawnings and group into two distinct groups. The drawings are captured on a retina system, and the light intensity is measured in each cell, each one keeps a memory of what was seen, and based on its memories it identifies shapes and classifies them in a binary way.</p><p><a href='https://wikipedia.org/wiki/Perceptron' target='_blank'>Read more about it</a></p><p><a href='https://youtu.be/GVsUOuSjvcg?t=221' target='_blank'>Watch more about it</a></p>",
                 "languages" : ["JavaScript","HTML","Canvas API"],
                 "devices" : ["phones","tablets","consoles","desktops"],
                 "link" : "https://github.com/Andybf/Perceptron/",
