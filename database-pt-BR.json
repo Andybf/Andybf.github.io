@@ -21,6 +21,19 @@
         ],
         "items" : [
             {
+                "name" : "Perceptron",
+                "category" : "Experimento de inteligência artificial",
+                "imgSrc" : "/media/img/en-US/perceptron.png",
+                "description" : "<p>O perceptron é um dos primeiros algoritmos criados para simular o comportamento de neurônios humanos. Criado originalmente por Frank Rosenblatt em 1958.<p></p>Uma vez treinada de forma supervisionada, a IA é capaz de diferenciar simbolos e/ou desenhos em dois grupos distintos. Os desenhos são capturados em uma retina, e sua itensidade de luz é medida em cada célula, cada uma delas guarda uma memória do que foi visto, e com base em suas memórias ela identifica as formas e classifica-os de forma binária.</p><p><a href='https://pt.wikipedia.org/wiki/Perceptron' target='_blank'>Leia mais sobre</a></p>",
+                "languages" : ["JavaScript","HTML","Canvas API"],
+                "devices" : ["phones","tablets","consoles","desktops"],
+                "link" : "https://github.com/Andybf/Perceptron/",
+                "linkLiveDemo" : "https://andybf.github.io/Perceptron/",
+                "isLiveDemoEnabled" : true,
+                "isViewSourceEnabled" : true,
+                "isVisible" : true
+            },
+            {
                 "name" : "Open Flappy",
                 "category" : "Jogo online",
                 "imgSrc" : "/media/img/en-US/flappy.png",
