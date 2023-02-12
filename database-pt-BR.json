@@ -24,11 +24,11 @@
                 "name" : "Icosphere",
                 "category" : "Biblioteca de criação de Jogos",
                 "imgSrc" : "/media/img/en-US/dark-theme/icosphere.png",
-                "description" : "<p>O Icosphere Game Library é uma biblioteca de criação de jogos 2D/3D de alta performace com aceleração por hardware multiplataforma. Com uma estrutura simplificada escrita em C/C++ que permite compilar jogos tanto para desktop nativamente quanto para navegadores web, incluindo smartphones, tablets, consoles e computadores Windows/Linux/macOS.</p><p>Toda a especificação da biblioteca se encontra na documentação disponível pelo botão 'Experimente'. Com introdução, visão geral, arquitetura, exemplos e material de referência de funções. </p>",
+                "description" : "<p>O Icosphere Game Library é uma biblioteca de criação de jogos 2D/3D de alta performace com aceleração por hardware multiplataforma. Com uma estrutura simplificada escrita em C/C++ que permite compilar jogos tanto para desktop nativamente quanto para navegadores web, incluindo smartphones, tablets, consoles e computadores Windows/Linux/macOS.</p><p>Toda a especificação da biblioteca se encontra na documentação disponível pelo botão 'Experimente'. Com introdução, visão geral, arquitetura, exemplos e material de referência de funções. </p><p><a href='https://andybf.github.io/IcosphereGameLibrary/IcosphereGameLibrary/documentation/'>Acesse a documentação aqui</a></p>",
                 "languages" : ["C","C++","OpenGL","WebAssembly","JavaScript"],
                 "devices" : ["phones","tablets","consoles","desktops"],
                 "link" : "https://github.com/Andybf/IcosphereGameLibrary/",
-                "linkLiveDemo" : "https://andybf.github.io/IcosphereGameLibrary/documentation/",
+                "linkLiveDemo" : "https://andybf.github.io/IcosphereGameLibrary/IcosphereGameLibrary/example/",
                 "isLiveDemoEnabled" : true,
                 "isViewSourceEnabled" : true,
                 "isVisible" : true
