@@ -29,7 +29,7 @@
                 "languages" : ["C","C++","OpenGL","WebAssembly","JavaScript"],
                 "devices" : ["phones","tablets","consoles","desktops"],
                 "link" : "https://github.com/Andybf/IcosphereGameLibrary/",
-                "linkLiveDemo" : "https://andybf.github.io/IcosphereGameLibrary/documentation/",
+                "linkLiveDemo" : "https://andybf.github.io/IcosphereGameLibrary/IcosphereGameLibrary/example/",
                 "isLiveDemoEnabled" : true,
                 "isViewSourceEnabled" : true,
                 "isVisible" : true
