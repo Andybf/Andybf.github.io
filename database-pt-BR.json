@@ -21,6 +21,19 @@
         ],
         "items" : [
             {
+                "name" : "Gerador de Terreno",
+                "category" : "Demonstração Técnica",
+                "imgSrc" : "/media/img/en-US/terraingenerator.png",
+                "description" : "<p>O Gerador de Terreno é uma demonstração técnica, criada para mostrar os recursos do Icosphere Game Library. Usando algoritmos de geração procedural para renderizar ruídos como o <i>perlin </i>e<i> simplex noises</i>, nos dá o poder de criar algumas paisagens interessantes com montanhas, lagos, praias e planícies. O aplicativo oferece toda uma gama de ferramentas para customizar a paisagem como desejar, não só o terreno, mas também o ambiente ao redor. </p><p>Tudo é renderizado com aceleração gráfica, dando o melhor desempenho para desktops e celulares, diretamente do navegador.</p>",
+                "languages" : ["C","C++","OpenGL","WebAssembly","JavaScript"],
+                "devices" : ["phones","tablets","desktops"],
+                "link" : "https://github.com/Andybf/TerrainGenerator/",
+                "linkLiveDemo" : "https://andybf.github.io/TerrainGenerator/",
+                "isLiveDemoEnabled" : true,
+                "isViewSourceEnabled" : true,
+                "isVisible" : true
+            },
+            {
                 "name" : "Icosphere",
                 "category" : "Biblioteca de criação de Jogos",
                 "imgSrc" : "/media/img/en-US/dark-theme/icosphere.png",

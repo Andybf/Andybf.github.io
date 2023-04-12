@@ -22,6 +22,19 @@
         ],
         "items" : [
             {
+                "name" : "Terrain Generator",
+                "category" : "Tech demo",
+                "imgSrc" : "/media/img/en-US/terraingenerator.png",
+                "description" : "<p>The Terrain Generator is a tech demo, created to show the capabilites of the Icosphere Game Library. Using procedural generation algorithms to render noise, we can create some interesting landscapes with mountains, lakes, beaches and plains. The application offers all range of tools to customize the landscape as you wish, not only the terrain, but also the ambient around. </p><p>Everything is rendered with graphics acceleration, giving the best performance for desktops and mobile phones, directly from the web browser.</p>",
+                "languages" : ["C","C++","OpenGL","WebAssembly","JavaScript"],
+                "devices" : ["phones","tablets","desktops"],
+                "link" : "https://github.com/Andybf/TerrainGenerator/",
+                "linkLiveDemo" : "https://andybf.github.io/TerrainGenerator/",
+                "isLiveDemoEnabled" : true,
+                "isViewSourceEnabled" : true,
+                "isVisible" : true
+            },
+            {
                 "name" : "Icosphere",
                 "category" : "Game development library",
                 "imgSrc" : "/media/img/en-US/dark-theme/icosphere.png",
