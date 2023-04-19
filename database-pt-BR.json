@@ -5,6 +5,7 @@
         "devices-title" : "Dispositivos suportados",
         "liveDemo" : "Experimente!",
         "viewSource" : "Código Fonte",
+        "helpFooterTitle" : "Veja diversas formas de ajudar:",
         "lookAtGitHub" : "Dê uma olhada no meu repositório do GitHub",
         "contactEmail" : "Entre em contato comigo por email, diga algo que deseja compartilhar!",
         "bitcoin" : "Compre-me mais uma xícara de café, ajude-me a criar coisas legais!"
@@ -14,9 +15,9 @@
         "itemType" : "project",
         "description" : [
             "Seja bem-vindo(a)!",
-            "Aqui você encontrará alguns dos projetos que venho trabalhando de forma independente, impulsionados pela curiosidade na vontade de experimentar coisas.",
-            "Você pode experimentar os protótipos através do botão 'Experimente', ou se quiser, ver o código fonte através do botão 'Código fonte' para abrir o capô das máquinas e observar como elas funcionam.",
-            "Lembrando que todo software apresentado acompanha uma licença GPLv3, e como protótipos, eles vem sem qualquer garantia de funcionamento pleno.",
+            "Aqui você encontrará alguns dos projetos que venho trabalhando de forma independente, impulsionados pela curiosidade em explorar o mundo da computação gráfica, com foco em algoritmos para jogos virtuais e simulações!",
+            "Você pode experimentar os protótipos através do botão 'Experimente', ou se quiser ver o que tem de baixo do capô, pode abrir o código-fonte dos projetos através do botão 'Código Fonte'.",
+            "Lembrando que todos os aplicativos são protótipos, eles vem sem qualquer garantia de funcionamento pleno. Acompanham licensas de uso GPLv3.",
             "Divirta-se!"
         ],
         "items" : [
@@ -24,7 +25,7 @@
                 "name" : "Gerador de Terreno",
                 "category" : "Demonstração Técnica",
                 "imgSrc" : "/media/img/en-US/terraingenerator.png",
-                "description" : "<p>O Gerador de Terreno é uma demonstração técnica, criada para mostrar os recursos do Icosphere Game Library. Usando algoritmos de geração procedural para renderizar ruídos como o <i>perlin </i>e<i> simplex noises</i>, nos dá o poder de criar algumas paisagens interessantes com montanhas, lagos, praias e planícies. O aplicativo oferece toda uma gama de ferramentas para customizar a paisagem como desejar, não só o terreno, mas também o ambiente ao redor. </p><p>Tudo é renderizado com aceleração gráfica, dando o melhor desempenho para desktops e celulares, diretamente do navegador.</p>",
+                "description" : "<p>O Gerador de Terreno é uma demonstração criada para mostrar o funcionamento de um algoritmo de geração procedural de ruídos. Neste caso usando o <i>perlin </i>e<i> simplex noises</i>.<p></p>Esses algoritmos nos dão o poder de criar um mapa 3D com algumas paisagens interessantes, como montanhas, lagos, praias e planícies.<p></p>O aplicativo oferece toda uma gama de ferramentas para customizar a paisagem como desejar, não só o terreno, mas também o ambiente ao redor. </p><p>Tudo é renderizado com aceleração gráfica, dando o melhor desempenho para desktops e celulares, diretamente do navegador.</p>",
                 "languages" : ["C","C++","OpenGL","WebAssembly","JavaScript"],
                 "devices" : ["phones","tablets","desktops"],
                 "link" : "https://github.com/Andybf/TerrainGenerator/",
@@ -175,19 +176,6 @@
                 "isLiveDemoEnabled" : false,
                 "isViewSourceEnabled" : true,
                 "isVisible" : false
-            },
-            {
-                "name" : "Anderson Bucchianico Website",
-                "category" : "Blog pessoal",
-                "imgSrc" : "/media/img/pt-BR/website.png",
-                "description" : "O próprio website que você está ultilizando agora, desenvolvido do zero, com o objetivo de abrigar projetos e artigos sobre tecnologia.",
-                "languages" : ["HTML","CSS","JavaScript","JSON"],
-                "devices" : ["phones","tablets","consoles","desktops"],
-                "link" : "https://github.com/Andybf/andybf.github.io",
-                "linkLiveDemo" : "/",
-                "isLiveDemoEnabled" : false,
-                "isViewSourceEnabled" : true,
-                "isVisible" : true
             }
         ]
     }

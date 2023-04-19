@@ -5,6 +5,7 @@
         "devices-title" : "Supported devices",
         "liveDemo" : "Live Demo",
         "viewSource" : "Source Code",
+        "helpFooterTitle" : "See different forms of help:",
         "lookAtGitHub" : "Take a look at my Github repository",
         "contactEmail" : "Contact me by email, tell me something you want to share!",
         "bitcoin" : "Buy-me a cup of cofffe! Help me to create new cool things"
@@ -14,7 +15,7 @@
         "itemType" : "project",
         "description" : [
             "Welcome!",
-            "Here you'll find some of the projects I've been working on independently, things for fun and a willingness to experiment.",
+            "Here you'll find some of the projects I've been working on independently, things for fun and a willingness to experiment algorithms with focus for simulations and virtual games.",
             "Programming is an art, a new way of expressing oneself in the world, not only observing the result of various numbers being computed at all times, but in the way everything is roterized. Each script is unique, each programmer exposes how their logical mind works through code. The application may even be the same, but its internal structure will never be the same, (unless you copy disably) for the same functionality there are thousands of different ways to be implemented.",
             "You can try out the prototypes through the 'Live demo' button, or if you want, view the source code through the 'Source code' button to open the hood of the machines and see how they work.",
             "Keep in mind that every software shown in this site hava a PGLv3 license. And as prototypes, they come without any warranty of any kind.",
@@ -176,19 +177,6 @@
                 "isLiveDemoEnabled" : false,
                 "isViewSourceEnabled" : true,
                 "isVisible" : false
-            },
-            {
-                "name" : "Anderson Bucchianico Website",
-                "category" : "Personal website",
-                "imgSrc" : "/media/img/en-US/website.png",
-                "description" : "This website you are using now, developed from scratch, with the aim of housing projects and articles about technology.",
-                "languages" : ["HTML","CSS","JavaScript","JSON"],
-                "devices" : ["phones","tablets","consoles","desktops"],
-                "link" : "https://github.com/Andybf/andybf.github.io",
-                "linkLiveDemo" : "/",
-                "isLiveDemoEnabled" : false,
-                "isViewSourceEnabled" : true,
-                "isVisible" : true
             }
         ]
     }

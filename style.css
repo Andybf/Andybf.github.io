@@ -12,16 +12,6 @@
     src: url('./media/fonts/open-sans/OpenSans-Semibold.ttf');
 }
 
-@font-face {
-    font-family: LeagueSpartan;
-    src: url('./media/fonts/league-spartan/leaguespartan-bold.ttf');
-}
-
-@font-face {
-    font-family: LatoHeavy;
-    src: url('./media/fonts/lato/Lato-Heavy.ttf');
-}
-
 @media(prefers-color-scheme: dark) {
     .dynamic-theme {
         --first-background: #393939;
@@ -74,18 +64,21 @@ body {
 
 header > .site-header {
     background-color: var(--second-background);
-    padding: 1.25rem;
+    padding: 0.75rem 1.25rem;
+    height: 36px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-header > .site-header > div.donate-container > button {
-    font-size: 10pt;
-    border-radius: 10px;
-    background-color: var(--first-background);
+button.donate {
+    font-size: 11pt;
+    border-radius: 5px;
+    background-color: var(--first-blue-tone);
     padding: 4px 12px;
     border: none;
     cursor: pointer;
+    height: inherit;
 }
 
 h1 {
@@ -159,10 +152,6 @@ article {
     background: var(--second-background);
     width: 50%;
     align-items: center;
-}
-
-b {
-    color : #ff4848;
 }
 
 .card-title {
@@ -305,9 +294,11 @@ footer {
 
 .footer-list {
     display: flex;
+    row-gap: 3rem;
     padding: 3rem 4rem;
     background-color: var(--second-background);
     justify-content: space-between;
+    flex-direction: column;
 }
 
 .footer-list > ul {
@@ -324,11 +315,10 @@ footer {
 
 .footer-list > ul > li > a {
     font-size: 12pt;
-    font-family: 'LatoHeavy';
 }
 
 img.footer-icon {
-    height: 20px;
+    height: 22px;
     filter: var(--invert-color-icon);
 }
 
@@ -362,6 +352,13 @@ figcaption {
 
 @media(max-width: 768px) {
 
+    section.site-header {
+        flex-direction: column;
+        height: auto;
+        row-gap: 0.75rem;
+        padding: 1.5rem;
+    }
+
     article {
         width : 96vw;
     }
@@ -372,10 +369,6 @@ figcaption {
 
     .page-description  > p {
         padding: 0 1rem;
-    }
-
-    div.donate-container {
-        display: none;
     }
 
     nav > button.page-button {
