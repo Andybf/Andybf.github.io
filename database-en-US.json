@@ -18,7 +18,7 @@
             "Here you'll find some of the projects I've been working on independently, things for fun and a willingness to experiment algorithms with focus for simulations and virtual games.",
             "Programming is an art, a new way of expressing oneself in the world, not only observing the result of various numbers being computed at all times, but in the way everything is roterized. Each script is unique, each programmer exposes how their logical mind works through code. The application may even be the same, but its internal structure will never be the same, (unless you copy disably) for the same functionality there are thousands of different ways to be implemented.",
             "You can try out the prototypes through the 'Live demo' button, or if you want, view the source code through the 'Source code' button to open the hood of the machines and see how they work.",
-            "Keep in mind that every software shown in this site hava a PGLv3 license. And as prototypes, they come without any warranty of any kind.",
+            "Keep in mind that every software shown in this site hava a GPLv3 license. And as prototypes, they come without any warranty of any kind.",
             "Enjoy yourself!"
         ],
         "items" : [
@@ -27,7 +27,7 @@
                 "category" : "Tech demo",
                 "imgSrc" : "/media/img/en-US/terraingenerator.webp",
                 "description" : "<p>The Terrain Generator is a tech demo, created to show the capabilites of the Icosphere Game Library. Using procedural generation algorithms to render noise, we can create some interesting landscapes with mountains, lakes, beaches and plains. The application offers all range of tools to customize the landscape as you wish, not only the terrain, but also the ambient around. </p><p>Everything is rendered with graphics acceleration, giving the best performance for desktops and mobile phones, directly from the web browser.</p>",
-                "languages" : ["C","C++","OpenGL","WebAssembly","JavaScript"],
+                "languages" : ["C","C++","OpenGL","SDL","WebAssembly","JavaScript"],
                 "devices" : ["phones","tablets","desktops"],
                 "link" : "https://github.com/Andybf/TerrainGenerator/",
                 "linkLiveDemo" : "https://andybf.github.io/TerrainGenerator/",
@@ -40,7 +40,7 @@
                 "category" : "Game development library",
                 "imgSrc" : "/media/img/en-US/icosphere.webp",
                 "description" : "<p>The Icosphere Game Library is a high-performance cross-platform 2D/3D game creation library with support for hardware acceleration. With a simplified architecture written in C/C++, it allows you to easily compile games for both desktop and web browsers natively. Including smartphones, tablets, consoles and Windows, Linux and macOS computers and Chrome, Firefox and Safari browsers.</p><p>The entire specification of the library can be found in the documentation available through the link below. With introduction, system overview, architecture, examples and reference material. </p><p><a href='https://andybf.github.io/IcosphereGameLibrary/IcosphereGameLibrary/documentation/'>Access the documentation here</a></p>",
-                "languages" : ["C","C++","OpenGL","WebAssembly","JavaScript"],
+                "languages" : ["C","C++","OpenGL","SDL","WebAssembly","JavaScript"],
                 "devices" : ["phones","tablets","consoles","desktops"],
                 "link" : "https://github.com/Andybf/IcosphereGameLibrary/",
                 "linkLiveDemo" : "https://andybf.github.io/IcosphereGameLibrary/IcosphereGameLibrary/example/",

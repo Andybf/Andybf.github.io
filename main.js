@@ -3,35 +3,35 @@
  * Created by: Anderson Bucchianico
 */
 
-async function initialize() {
-    getDatabase().then( response => {
-        database = JSON.parse(response);
-        
-        database['content'].description.forEach( paragraph => {
-            let newParagraph = document.createElement("P"); 
-            newParagraph.classList.add("paragraph-description");
-            newParagraph.innerText = paragraph;
-            document.querySelector(".page-description").appendChild(newParagraph);
-        });
-        
-        let projectsList = document.querySelector(".projects-list");
-        database['content'].items.forEach( (item) => {
-            if (item.isVisible) {
-                projectsList.appendChild(createProjectItem(item));
-            }
-        });
+"use strict"
 
-        translateInterface(database.interface);
-    });
+async function initialize() {
+    const response = await getDatabase();
+    const database = JSON.parse(response);
+    
+    for(const paragraph of database['content'].description) {
+        let newParagraph = document.createElement("p"); 
+        newParagraph.classList.add("paragraph-description");
+        newParagraph.innerText = paragraph;
+        document.querySelector(".page-description").appendChild(newParagraph);
+    }
+
+    let projectsList = document.querySelector(".projects-list");
+    for(const project of database['content'].items) {
+        if (project.isVisible) {
+            projectsList.appendChild(createProjectItem(project));
+        }
+    }
+
+    translateInterface(database.interface);
 }
 
 async function getDatabase() {
-    let language = navigator.language;
+    const language = navigator.language;
     if (language != 'en-US' && language != 'pt-BR') {
         language = 'en-US';
     }
-    let database = `./database-${language}.json`;
-    response = await fetch(database);
+    const response = await fetch(`./database-${language}.json`);
     if (response.status == 200 || response.statusText == 'OK') {
         return await response.text();
     } else {
