@@ -9,7 +9,7 @@ async function initialize() {
     const response = await getDatabase();
     const database = JSON.parse(response);
     
-    for(const paragraph of database['content'].description) {
+    for(const paragraph of database['content']['description']) {
         let newParagraph = document.createElement("p"); 
         newParagraph.classList.add("paragraph-description");
         newParagraph.innerText = paragraph;
@@ -23,13 +23,18 @@ async function initialize() {
         }
     }
 
-    translateInterface(database.interface);
+    translateInterface(database['interface-text'], "innerText");
+    translateInterface(database['interface-values'], "value");
+    translateInterface(database['interface-placeholders'], "placeholder");
 }
 
 async function getDatabase() {
     let language = navigator.language;
     if (language != 'en-US' && language != 'pt-BR') {
         language = 'en-US';
+    }
+    if (language == 'pt') {
+        language = 'pt-BR';
     }
     const response = await fetch(`./database-${language}.json`);
     if (response.status == 200 || response.statusText == 'OK') {
@@ -65,16 +70,19 @@ function createProjectItem(databaseItem) {
     return newCard;
 }
 
-function translateInterface(strings) {
+function translateInterface(strings, attribute) {
     Object.keys(strings).forEach( string => {
         document.querySelectorAll(`.${string}`).forEach(element => {
-            element.innerText = strings[string];
+            element[attribute] = strings[string];
         });
     });
 }
 
-function toggleDonateScreen() {
-    window.scrollTo(0,document.body.scrollHeight)
+function sendEmail() {
+    const emailSubject = document.querySelector("input[name='subject']").value;
+    const emailBody = document.querySelector("textarea[name='body']").value;
+    
+    window.location.href = `mailto:anderson584bf@gmail.com?subject=${emailSubject}&body=${encodeURIComponent(emailBody)}`;
 }
 
 initialize();

@@ -1,14 +1,25 @@
 {
-    "interface" : {
+    "interface-text" : {
         "donate-message" : "Contato",
         "tecnologies-title" : "Tecnologias usadas",
         "devices-title" : "Dispositivos suportados",
         "liveDemo" : "Experimente!",
         "viewSource" : "Código Fonte",
-        "helpFooterTitle" : "Veja diversas formas de ajudar:",
         "lookAtGitHub" : "Dê uma olhada no meu repositório do GitHub",
-        "contactEmail" : "Entre em contato comigo por email, diga algo que deseja compartilhar!",
-        "bitcoin" : "Compre-me mais uma xícara de café, ajude-me a criar coisas legais!"
+        "contactEmail" : "Entre em contato comigo por email!",
+        "bitcoin" : "Seja meu patrão! Ajude-me a criar coisas legais!",
+        "footer-title" : "Entre em contato",
+        "footer-message" : "Tem alguma ideia de projeto legal? Eu posso ajudar você! Mande uma mensagem rápida diretamente para mim:",
+        "form-email-subject" : "Assunto",
+        "form-email-body" : "Mensagem",
+        "form-email-warning" : "*Necessário ter um aplicativo de email instalado em seu dispositivo."
+    },
+    "interface-values" : {
+        "form-submit-button" : "Enviar"
+    },
+    "interface-placeholders" : {
+        "form-email-subject-placeholder" : "Assunto do email",
+        "form-email-message-placeholder" : "Diga algo que deseja compartilhar!"
     },
     "content" : {
         "title" : "Meus Projetos",

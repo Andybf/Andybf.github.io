@@ -1,14 +1,25 @@
 {
-    "interface" : {
+    "interface-text" : {
         "donate-message" : "Contact",
         "tecnologies-title" : "Tecnologies used",
         "devices-title" : "Supported devices",
         "liveDemo" : "Live Demo",
         "viewSource" : "Source Code",
-        "helpFooterTitle" : "See different forms of help:",
         "lookAtGitHub" : "Take a look at my Github repository",
         "contactEmail" : "Contact me by email, tell me something you want to share!",
-        "bitcoin" : "Buy-me a cup of cofffe! Help me to create new cool things"
+        "bitcoin" : "Buy-me a cup of cofffe! Help me to create new cool things",
+        "footer-title" : "Contact me",
+        "footer-message" : "Have an idea for a cool project? I can help you! Send a quick message direclty to me:",
+        "form-email-subject" : "Subject",
+        "form-email-body" : "Message",
+        "form-email-warning" : "*Requires an email client installed on your device."
+    },
+    "interface-values" : {
+        "form-submit-button" : "Send"
+    },
+    "interface-placeholders" : {
+        "form-email-subject-placeholder" : "Email subject",
+        "form-email-message-placeholder" : "Say something you want to share!"
     },
     "content" : {
         "title" : "My Projects",

@@ -41,10 +41,10 @@
         <header>
             <nav>
                 <h1>Anderson Bucchianico Website</h1>
-                <button class="contact-button" onclick="toggleDonateScreen(event)">
+                <a class="contact-button" href="#footer-title-contact">
                     <span class="donate-message">...</span>
                     <img class="contact-img" src="./media/icons/phone.svg"/>
-                </button>
+                </a>
             </nav>
             <section class="page-description"></section>
         </header>
@@ -53,11 +53,31 @@
             <ul class="projects-list"></ul>
         </article>
 
-        <footer>
+        <footer id="footer-title-contact">
             <section class="footer-list">
-                <h2 class="helpFooterTitle">
+                <h2 class="footer-title">
                     ...
                 </h2>
+
+                <form action="javascript:sendEmail()">
+                    <span class="footer-message"></span>
+                    <div>
+                        <label for="subject" class="form-email-subject">...</label>
+                        <input name="subject" type="text" class="form-email-subject-placeholder" placeholder="..."/>
+                    </div>
+                    <div>
+                        <label for="body" class="form-email-body">...</label>
+                        <textarea name="body" rows="8" class="form-email-message-placeholder" placeholder="..."></textarea>
+                    </div>
+                    <div>
+                        <input value="..." class="form-submit-button" type="submit"/>
+                        <span class="form-email-warning"></span>
+                    </div>
+                </form>
+            </section>
+
+            <section class="bottom-footer">
+
                 <ul>
                     <li class="footer-list-item">
                         <a class="footer-link" href="mailto:anderson584bf@gmail.com">
@@ -87,8 +107,9 @@
                         </span>
                     </li>
                 </ul>
-            </section>
-            <section class="bottom-footer">
+
+                <hr/>
+
                 <span>2023 - Anderson Bucchianico</span>
             </section>
         </footer>
