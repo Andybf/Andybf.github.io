@@ -400,6 +400,7 @@ input, textarea {
 input[type='submit'] {
     width: fit-content;
     background-color: var(--first-blue-tone);
+    color: var(--second-font-color);
     padding: 0.75rem;
     cursor: pointer;
 }
@@ -427,6 +428,10 @@ input[type='submit']:hover {
     nav {
         padding: 1vh 4vw;
         width: calc(100% - 8vw);
+    }
+
+    h1 {
+        font-size: 14pt;
     }
 
     button.contact-button {
@@ -489,7 +494,8 @@ input[type='submit']:hover {
     }
 
     a.footer-link {
-        width: max-content;
+        width: auto;
+        text-align: left;
     }
 
     /* Footer form */

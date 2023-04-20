@@ -81,7 +81,6 @@ function translateInterface(strings, attribute) {
 function sendEmail() {
     const emailSubject = document.querySelector("input[name='subject']").value;
     const emailBody = document.querySelector("textarea[name='body']").value;
-    
     window.location.href = `mailto:anderson584bf@gmail.com?subject=${emailSubject}&body=${encodeURIComponent(emailBody)}`;
 }
 
