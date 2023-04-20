@@ -7,9 +7,21 @@ async function initialize() {
     getDatabase().then( response => {
         database = JSON.parse(response);
         
-        let newButton = document.querySelector(".page-button");
-        newButton.innerText = database['content'].title;
-        changePage(database['content']);
+        database['content'].description.forEach( paragraph => {
+            let newParagraph = document.createElement("P"); 
+            newParagraph.classList.add("paragraph-description");
+            newParagraph.innerText = paragraph;
+            document.querySelector(".page-description").appendChild(newParagraph);
+        });
+        
+        let projectsList = document.querySelector(".projects-list");
+        database['content'].items.forEach( (item) => {
+            if (item.isVisible) {
+                projectsList.appendChild(createProjectItem(item));
+            }
+        });
+
+        translateInterface(database.interface);
     });
 }
 
@@ -51,23 +63,6 @@ function createProjectItem(databaseItem) {
         newCard.querySelector("#view-source").setAttribute('disabled',false);
     }
     return newCard;
-}
-
-function changePage(page) {
-    let projectsList = document.querySelector("#projects-list");
-
-    page.description.forEach( paragraph => {
-        let newParagraph = document.createElement("P"); 
-        newParagraph.classList.add("paragraph-description");
-        newParagraph.innerText = paragraph;
-        document.querySelector(".page-description").appendChild(newParagraph);
-    });
-    page.items.forEach( (item) => {
-        if (item.isVisible) {
-            projectsList.appendChild(createProjectItem(item));
-        }
-    });
-    translateInterface(database.interface);
 }
 
 function translateInterface(strings) {

@@ -1,6 +1,6 @@
 {
     "interface" : {
-        "donate" : "Help-me buying a cup of cofffe!",
+        "donate-message" : "Contact",
         "tecnologies-title" : "Tecnologies used",
         "devices-title" : "Supported devices",
         "liveDemo" : "Live Demo",
@@ -25,7 +25,7 @@
             {
                 "name" : "Terrain Generator",
                 "category" : "Tech demo",
-                "imgSrc" : "/media/img/en-US/terraingenerator.png",
+                "imgSrc" : "/media/img/en-US/terraingenerator.webp",
                 "description" : "<p>The Terrain Generator is a tech demo, created to show the capabilites of the Icosphere Game Library. Using procedural generation algorithms to render noise, we can create some interesting landscapes with mountains, lakes, beaches and plains. The application offers all range of tools to customize the landscape as you wish, not only the terrain, but also the ambient around. </p><p>Everything is rendered with graphics acceleration, giving the best performance for desktops and mobile phones, directly from the web browser.</p>",
                 "languages" : ["C","C++","OpenGL","WebAssembly","JavaScript"],
                 "devices" : ["phones","tablets","desktops"],
@@ -38,7 +38,7 @@
             {
                 "name" : "Icosphere",
                 "category" : "Game development library",
-                "imgSrc" : "/media/img/en-US/dark-theme/icosphere.png",
+                "imgSrc" : "/media/img/en-US/icosphere.webp",
                 "description" : "<p>The Icosphere Game Library is a high-performance cross-platform 2D/3D game creation library with support for hardware acceleration. With a simplified architecture written in C/C++, it allows you to easily compile games for both desktop and web browsers natively. Including smartphones, tablets, consoles and Windows, Linux and macOS computers and Chrome, Firefox and Safari browsers.</p><p>The entire specification of the library can be found in the documentation available through the link below. With introduction, system overview, architecture, examples and reference material. </p><p><a href='https://andybf.github.io/IcosphereGameLibrary/IcosphereGameLibrary/documentation/'>Access the documentation here</a></p>",
                 "languages" : ["C","C++","OpenGL","WebAssembly","JavaScript"],
                 "devices" : ["phones","tablets","consoles","desktops"],
@@ -51,7 +51,7 @@
             {
                 "name" : "Perceptron",
                 "category" : "AI experiment",
-                "imgSrc" : "/media/img/en-US/perceptron.png",
+                "imgSrc" : "/media/img/en-US/perceptron.webp",
                 "description" : "<p>The perceptron is one of the first algorithms created to simulate the behavior of human neurons. Originally created by Frank Rosenblatt in 1958.<p></p>Once trained in a supervised manner, the AI is capable of differentiating symbols and/or drawnings and group into two distinct groups. The drawings are captured on a retina system, and the light intensity is measured in each cell, each one keeps a memory of what was seen, and based on its memories it identifies shapes and classifies them in a binary way.</p><p><a href='https://wikipedia.org/wiki/Perceptron' target='_blank'>Read more about it</a></p><p><a href='https://youtu.be/GVsUOuSjvcg?t=221' target='_blank'>Watch more about it</a></p>",
                 "languages" : ["JavaScript","HTML","Canvas API"],
                 "devices" : ["phones","tablets","consoles","desktops"],
@@ -64,7 +64,7 @@
             {
                 "name" : "Open Flappy",
                 "category" : "Web Game",
-                "imgSrc" : "/media/img/en-US/flappy.png",
+                "imgSrc" : "/media/img/en-US/flappy.webp",
                 "description" : "<p>A recreation from a famous game, Flappy Bird. Running directcly on your web browser, built to work on your cellphone or your computer.</p><p>Credits to <a href='https://zapsplat.com' target='_blank'>zapsplat.com</a> for the sound effects and <a href='https://opengameart.org/content/flappy-bird' target='_blank'>Peleila@opengameart.org</a> for the art.</p><p>Thank you for the use availability of the material and check out their work!",
                 "languages" : ["JavaScript","HTML","Canvas API"],
                 "devices" : ["phones","tablets","consoles","desktops"],
@@ -77,7 +77,7 @@
             {
                 "name" : "KanbanWeb",
                 "category" : "Task manager",
-                "imgSrc" : "/media/img/en-US/freewebkanban.png",
+                "imgSrc" : "/media/img/en-US/freewebkanban.webp",
                 "description" : "A open source application for organizing projects based on the Kanban model.<br>It has support for saving on browser, export to your device, responsive interface for mobile and desktop and dynamic theme.",
                 "languages" : ["JavaScript","HTML","CSS","Service Worker API"],
                 "devices" : ["phones","tablets","desktops"],
@@ -90,7 +90,7 @@
             {
                 "name" : "PaintSpace",
                 "category" : "Photo editing and drawing tool",
-                "imgSrc" : "/media/img/en-US/paintspace.png",
+                "imgSrc" : "/media/img/en-US/paintspace.webp",
                 "description" : "This single page application allow the possibility to create drawnings, paintings, edit images, play with geometrical forms, mess with the color pallete and much more, everything is simple and straight to the point Try now and unleash your creativity.",
                 "languages" : ["HTML","CSS","JavaScript","Canvas API"],
                 "devices" : ["phones","tablets","desktops"],
@@ -103,7 +103,7 @@
             {
                 "name" : "Falling Blocks",
                 "category" : "Game with graphics acceleration",
-                "imgSrc" : "/media/img/en-US/fallingblocks.png",
+                "imgSrc" : "/media/img/en-US/fallingblocks.webp",
                 "description" : "A simple, but more complex implementation of a game written in C with help of OpenGL. Basically consists of a mechanic where the player needs to dodge falling objects, the more objects the player avoids, the more points he earns.",
                 "languages" : ["C","C++","OpenGL"],
                 "devices" : ["desktops"],
@@ -116,7 +116,7 @@
             {
                 "name" : "Mandelbrot Experiment",
                 "category" : "Visual Experiment",
-                "imgSrc" : "/media/img/en-US/mandelbrot.png",
+                "imgSrc" : "/media/img/en-US/mandelbrot.webp",
                 "description" : "<p>The experiment of Mandelbrot set creates an very interesting and extremly complex image by doing some math and drawing the result on the cartesian plane.</p><p>You can learn more about fractals on <a href='https://en.wikipedia.org/wiki/Mandelbrot_set'>this article</a> on Wikipedia.</p><p><b>WARNING:</b> keep in mind that the rendering demands time and power from your computer, the page can be unresponsive for a couple of time, usually some seconds.</p>",
                 "languages" : ["JavaScript","HTML","CSS","Canvas API"],
                 "devices" : ["desktops"],
@@ -129,7 +129,7 @@
             {
                 "name" : "SnakeGame",
                 "category" : "Game with graphics acceleration",
-                "imgSrc" : "/media/img/en-US/snakegame.png",
+                "imgSrc" : "/media/img/en-US/snakegame.webp",
                 "description" : "A very simple old game, but recreated with the help of C language combined with OpenGL, no engines were used, the objective is very clear, eat as more as you can, without touching anything else.",
                 "languages" : ["C","C++","OpenGL"],
                 "devices" : ["desktops"],
@@ -142,7 +142,7 @@
             {
                 "name" : "AtomBiosEditor",
                 "category" : "Firmware editor",
-                "imgSrc" : "/media/img/en-US/atombios.png",
+                "imgSrc" : "/media/img/en-US/atombios.webp",
                 "description" : "A graphics card firmware editor, making possible to perform extreme overclocks on the board, focused on editing AMD GPU's BIOS released between 2011 and 2015, works only on macOS system.",
                 "languages" : ["Objective-C","C++","C"],
                 "devices" : ["desktops"],
@@ -155,7 +155,7 @@
             {
                 "name" : "CRXDownloader",
                 "category" : "Tool",
-                "imgSrc" : "/media/img/en-US/crxdownloader.png",
+                "imgSrc" : "/media/img/en-US/crxdownloader.webp",
                 "description" : "A simple tool to download the source code of Chrome extensions in a practical way, thus allowing the analysis of possible unwanted or malicious codes or being able to load them in other browsers based on Chromium.",
                 "languages" : ["HTML", "CSS", "JavaScript"],
                 "devices" : ["phones","tablets","desktops"],
@@ -168,7 +168,7 @@
             {
                 "name" : "Andromeda Project",
                 "category" : "Java based game",
-                "imgSrc" : "/media/img/en-US/andromeda.png",
+                "imgSrc" : "/media/img/en-US/andromeda.webp",
                 "description" : "One of the first tries to develop a working game, it turns out to be a complete mess in his final stages of development, it doesn't even have an appropriate name, but it has a codename Andromeda.",
                 "languages" : ["Java","Swing"],
                 "devices" : ["desktops"],

@@ -22,26 +22,26 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=0.90">
         <link rel="stylesheet" href="style.css"/>
         <title>Anderson Bucchianico's Personal Page</title>
     </head>
-    <body>
-        <header>
-            <section class="site-header">
-                <h1>Anderson Bucchianico Website</h1>
-                <div class="flags">
 
-                </div>
-                <div class="donate-container">
-                    <button class="donate" onclick="toggleDonateScreen(event)">#</button>
-                </div>
-            </section>
+    <body>
+
+        <header>
+            <nav>
+                <h1>Anderson Bucchianico Website</h1>
+                <button class="contact-button" onclick="toggleDonateScreen(event)">
+                    <span class="donate-message">#</span>
+                    <img class="contact-img" src="./media/icons/phone.svg"/>
+                </button>
+            </nav>
+            <section class="page-description"></section>
         </header>
+
         <article>
-            <h2 class="page-button">Loading...</h2>
-            <p class="page-description"></p>
-            <ul id="projects-list" class="projects-list"></ul>
+            <ul class="projects-list"></ul>
         </article>
 
         <footer>
@@ -50,17 +50,32 @@
                     ...
                 </h2>
                 <ul>
-                    <li>
-                        <img class="footer-icon" src="/media/icons/email.svg"/>
-                        <a class="contactEmail" href="mailto:anderson584bf@gmail.com">#</a>
+                    <li class="footer-list-item">
+                        <a class="footer-link" href="mailto:anderson584bf@gmail.com">
+                            <img class="footer-icon" src="/media/icons/email.svg"/>
+                            <span class="contactEmail">#</span>
+                        </a>
+                        <span class="footer-span">
+                            anderson584bf@gmail.com
+                        </span>
                     </li>
-                    <li>
-                        <img class="footer-icon" src="/media/icons/bitcoin.svg"/>
-                        <a class="bitcoin" href="bitcoin:bc1qghe7dlwqatn40z6ryepy67qxf26xyx5p4knssd?message=personal-webpage-donations&time=1661887281">#</a> 
+                    <li class="footer-list-item">
+                        <a class="footer-link" href="bitcoin:bc1qghe7dlwqatn40z6ryepy67qxf26xyx5p4knssd?message=personal-webpage-donations&time=1661887281">
+                            <img class="footer-icon" src="/media/icons/bitcoin.svg"/>
+                            <span class="bitcoin" >#</span>
+                        </a>
+                        <span class="footer-span">
+                            bitcoin:bc1qghe7dlwqatn40z6ryepy67qxf26xyx5p4knssd
+                        </span>
                     </li>
-                    <li>
-                        <img class="footer-icon" src="/media/icons/GitHub.svg"/>
-                        <a class="lookAtGitHub" href="https://github.com/Andybf">#</a>
+                    <li class="footer-list-item">
+                        <a class="footer-link" href="https://github.com/Andybf">
+                            <img class="footer-icon" src="/media/icons/GitHub.svg"/>
+                            <span class="lookAtGitHub">#</span>
+                        </a>
+                        <span class="footer-span">
+                            https://github.com/Andybf
+                        </span>
                     </li>
                 </ul>
             </section>
