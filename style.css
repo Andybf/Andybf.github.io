@@ -28,7 +28,8 @@
         --first-blue-tone: #5557b3;
         --second-blue-tone: #383996;
 
-        --image-brightness : brightness(0.6);
+        --image-brightness: brightness(0.6);
+        --image-opacity: 1.0; 
         --box-shadow: 0 0px 6px 5px #ff0000;
         --invert-color-icon: invert(0.80);
         --background-blend-mode: unset;
@@ -49,7 +50,8 @@
         --first-blue-tone: #6466dc;
         --second-blue-tone: #8081cc;
 
-        --image-brightness : brightness(1.2);
+        --image-brightness : brightness(1.0);
+        --image-opacity: 0.75;
         --box-shadow : 0 0px 6px 5px #0000001a;
         --invert-color-icon: invert(0.0);
         --background-blend-mode: lighten;
@@ -95,7 +97,7 @@ button.contact-button:hover {
     filter: brightness(1.25);
 }
 span.donate-message {
-    color: var(--first-font-color);
+    color: var(--second-font-color);
 }
 img.contact-img {
     height: 15px;
@@ -155,6 +157,7 @@ article {
     background-size: cover;
     background-repeat: no-repeat;
     filter: var(--image-brightness);
+    opacity: var(--image-opacity);
 }
 
 .card-details {
@@ -307,17 +310,14 @@ footer {
 }
 
 .footer-list {
-    display: flex;
+    display: grid;
     row-gap: 3rem;
-    padding: 3rem 4rem;
+    padding: 3rem 8vw;
     background-color: var(--second-background);
-    justify-content: space-between;
-    flex-direction: column;
 }
 
 .footer-list > ul {
-    display: inherit;
-    flex-direction: column;
+    display: grid;
     list-style: none;
     row-gap: 3rem;
 }
@@ -343,6 +343,7 @@ img.footer-icon {
 
 span.footer-span {
     opacity: 0.5;
+    overflow-wrap: anywhere;
 }
 
 figure {
@@ -382,7 +383,6 @@ figcaption {
     nav {
         padding: 1vh 4vw;
         width: calc(100% - 8vw);
-        height: auto;
     }
 
     button.contact-button {

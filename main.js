@@ -27,7 +27,7 @@ async function initialize() {
 }
 
 async function getDatabase() {
-    const language = navigator.language;
+    let language = navigator.language;
     if (language != 'en-US' && language != 'pt-BR') {
         language = 'en-US';
     }
