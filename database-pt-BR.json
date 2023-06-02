@@ -59,19 +59,6 @@
                 "isVisible" : true
             },
             {
-                "name" : "Perceptron",
-                "category" : "Experimento de inteligência artificial",
-                "imgSrc" : "/media/img/en-US/perceptron.webp",
-                "description" : "<p>O perceptron é um dos primeiros algoritmos criados para simular o comportamento de neurônios humanos. Criado originalmente por Frank Rosenblatt em 1958.<p></p>Uma vez treinada de forma supervisionada, a IA é capaz de diferenciar simbolos e/ou desenhos em dois grupos distintos. Os desenhos são capturados em uma retina, e sua itensidade de luz é medida em cada célula, cada uma delas guarda uma memória do que foi visto, e com base em suas memórias ela identifica as formas e classifica-os de forma binária.</p><p><a href='https://pt.wikipedia.org/wiki/Perceptron' target='_blank'>Leia mais sobre</a></p><p><a href='https://youtu.be/GVsUOuSjvcg?t=221' target='_blank'>Assista mais sobre</a></p>",
-                "languages" : ["JavaScript","HTML","Canvas API"],
-                "devices" : ["phones","tablets","consoles","desktops"],
-                "link" : "https://github.com/Andybf/Perceptron/",
-                "linkLiveDemo" : "https://andybf.github.io/Perceptron/",
-                "isLiveDemoEnabled" : true,
-                "isViewSourceEnabled" : true,
-                "isVisible" : true
-            },
-            {
                 "name" : "Open Flappy",
                 "category" : "Jogo online",
                 "imgSrc" : "/media/img/en-US/flappy.webp",
@@ -80,6 +67,32 @@
                 "devices" : ["phones","tablets","consoles","desktops"],
                 "link" : "https://github.com/Andybf/OpenFlappy/",
                 "linkLiveDemo" : "https://andybf.github.io/OpenFlappy/",
+                "isLiveDemoEnabled" : true,
+                "isViewSourceEnabled" : true,
+                "isVisible" : true
+            },
+            {
+                "name" : "SnakeGame",
+                "category" : "Jogo acelerado por hardware",
+                "imgSrc" : "/media/img/en-US/snakegame.webp",
+                "description" : "<p>O famoso jogo da cobrinha, recriado mais uma vez em um plano bi-dimensional texturizado, com um tema retrô de 8-bits, referenciando a longevidade deste estilo de jogo desde que foi concebido pela primeira vez na década de 70.</p><p>Construído em C++, com a ajuda de biblioteca Icosphere e possibilidade de compilação para ambiente web, podemos combinar a facilidade de acesso em quase qualquer plataforma, seja para telefone e desktop, combinado com o nível de performance oferecida pela aceleração gráfica através da GPU de seu dispositivo.</p><p>Créditos para <a href='https://zapsplat.com' target='_blank'>zapsplat.com</a> pelos efeitos sonoros.</p>",
+                "languages" : ["C","C++","OpenGL","SDL","WebAssembly","JavaScript"],
+                "devices" : ["phones","tablets","desktops"],
+                "link" : "https://github.com/Andybf/SnakeGame",
+                "linkLiveDemo" : "https://andybf.github.io/SnakeGame/SnakeGame/webRelease/",
+                "isLiveDemoEnabled" : true,
+                "isViewSourceEnabled" : true,
+                "isVisible" : true
+            },
+            {
+                "name" : "Mandelbrot Experiment",
+                "category" : "Experimento Visual",
+                "imgSrc" : "/media/img/en-US/mandelbrot.webp",
+                "description" : "<p>O experimento do conjunto de Mandelbrot cria uma imagem muito interessante e extremamente complexa apenas fazendo algumas esquações matemáticas e desenhando o resultado no plano cartesiano.</p><p>Você pode ler mais sobre fractais <a href='https://pt.wikipedia.org/wiki/Conjunto_de_Mandelbrot'>neste artigo</a> da Wikipedia.</p><p><b>AVISO:</b> a renderização da imagem demanda uma quantidade de processamento que pode deixar a página sem resposta por alguns segundos.<p>",
+                "languages" : ["JavaScript","HTML","CSS","Canvas API"],
+                "devices" : ["desktops"],
+                "link" : "https://github.com/Andybf/Mandelbrot-Experiment",
+                "linkLiveDemo" : "https://andybf.github.io/Mandelbrot-Experiment/",
                 "isLiveDemoEnabled" : true,
                 "isViewSourceEnabled" : true,
                 "isVisible" : true
@@ -111,6 +124,19 @@
                 "isVisible" : true
             },
             {
+                "name" : "Perceptron",
+                "category" : "Experimento de inteligência artificial",
+                "imgSrc" : "/media/img/en-US/perceptron.webp",
+                "description" : "<p>O perceptron é um dos primeiros algoritmos criados para simular o comportamento de neurônios humanos. Criado originalmente por Frank Rosenblatt em 1958.<p></p>Uma vez treinada de forma supervisionada, a IA é capaz de diferenciar simbolos e/ou desenhos em dois grupos distintos. Os desenhos são capturados em uma retina, e sua itensidade de luz é medida em cada célula, cada uma delas guarda uma memória do que foi visto, e com base em suas memórias ela identifica as formas e classifica-os de forma binária.</p><p><a href='https://pt.wikipedia.org/wiki/Perceptron' target='_blank'>Leia mais sobre</a></p><p><a href='https://youtu.be/GVsUOuSjvcg?t=221' target='_blank'>Assista mais sobre</a></p>",
+                "languages" : ["JavaScript","HTML","Canvas API"],
+                "devices" : ["phones","tablets","consoles","desktops"],
+                "link" : "https://github.com/Andybf/Perceptron/",
+                "linkLiveDemo" : "https://andybf.github.io/Perceptron/",
+                "isLiveDemoEnabled" : true,
+                "isViewSourceEnabled" : true,
+                "isVisible" : true
+            },
+            {
                 "name" : "Falling Blocks",
                 "category" : "Jogo acelerado por hardware",
                 "imgSrc" : "/media/img/en-US/fallingblocks.webp",
@@ -122,32 +148,6 @@
                 "isLiveDemoEnabled" : false,
                 "isViewSourceEnabled" : true,
                 "isVisible" : false
-            },
-            {
-                "name" : "Mandelbrot Experiment",
-                "category" : "Experimento Visual",
-                "imgSrc" : "/media/img/en-US/mandelbrot.webp",
-                "description" : "<p>O experimento do conjunto de Mandelbrot cria uma imagem muito interessante e extremamente complexa apenas fazendo algumas esquações matemáticas e desenhando o resultado no plano cartesiano.</p><p>Você pode ler mais sobre fractais <a href='https://pt.wikipedia.org/wiki/Conjunto_de_Mandelbrot'>neste artigo</a> da Wikipedia.</p><p><b>AVISO:</b> a renderização da imagem demanda uma quantidade de processamento que pode deixar a página sem resposta por alguns segundos.<p>",
-                "languages" : ["JavaScript","HTML","CSS","Canvas API"],
-                "devices" : ["desktops"],
-                "link" : "https://github.com/Andybf/Mandelbrot-Experiment",
-                "linkLiveDemo" : "https://andybf.github.io/Mandelbrot-Experiment/",
-                "isLiveDemoEnabled" : true,
-                "isViewSourceEnabled" : true,
-                "isVisible" : true
-            },
-            {
-                "name" : "SnakeGame",
-                "category" : "Jogo acelerado por hardware",
-                "imgSrc" : "/media/img/en-US/snakegame.webp",
-                "description" : "Um jogo antigo muito simples, mas recriado com a ajuda da linguagem C combinada com OpenGL, nenhum motor foi usado, o objetivo é muito claro, coma o máximo que puder, sem tocar em mais nada.",
-                "languages" : ["C","C++","OpenGL"],
-                "devices" : ["desktops"],
-                "link" : "https://github.com/Andybf/SnakeGame",
-                "linkLiveDemo" : "/",
-                "isLiveDemoEnabled" : false,
-                "isViewSourceEnabled" : true,
-                "isVisible" : true
             },
             {
                 "name" : "AtomBiosEditor",
