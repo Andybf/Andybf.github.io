@@ -22,13 +22,11 @@
         "form-email-message-placeholder" : "Diga algo que deseja compartilhar!"
     },
     "content" : {
-        "title" : "Meus Projetos",
+        "title" : "Experimente meus projetos!",
         "itemType" : "project",
         "description" : [
-            "Seja bem-vindo(a)!",
-            "Aqui você encontrará alguns dos projetos que venho trabalhando de forma independente, impulsionados pela curiosidade em explorar o mundo da computação gráfica, com foco em algoritmos para jogos virtuais e simulações!",
-            "Você pode experimentar os protótipos através do botão 'Experimente', ou se quiser ver o que tem de baixo do capô, pode abrir o código-fonte dos projetos através do botão 'Código Fonte'.",
-            "Lembrando que todos os aplicativos são protótipos, eles vem sem qualquer garantia de funcionamento pleno. Acompanham licensas de uso GPLv3.",
+            "Aqui você encontrará projetos que venho trabalhando de forma independente, impulsionados pela curiosidade em explorar o mundo da computação gráfica, com foco em algoritmos para jogos virtuais e simulações!",
+            "Inicie a aplicação pelo botão 'Experimente'. Para ver as engrenagens e outros cálculos malucos, use o botão 'Código Fonte'.",
             "Divirta-se!"
         ],
         "items" : [

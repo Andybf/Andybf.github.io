@@ -8,12 +8,38 @@
 async function initialize() {
     const response = await getDatabase();
     const database = JSON.parse(response);
+
+    let introTitle = document.querySelector(".description-title");
+    introTitle.innerText = database['content']['title'];
     
     for(const paragraph of database['content']['description']) {
         let newParagraph = document.createElement("p"); 
         newParagraph.classList.add("paragraph-description");
         newParagraph.innerText = paragraph;
-        document.querySelector(".page-description").appendChild(newParagraph);
+        document.querySelector(".description-container").appendChild(newParagraph);
+    }
+
+    const dom_showroom = document.querySelector("div[class='page-showroom-container']");
+    let index = 0;
+    for(const project of database['content'].items) {
+        if (project.isVisible) {
+            if (index >= 7) {
+                break;
+            }
+            let showroomItem = document.createElement("div");
+            showroomItem.classList.add("showroom-item");
+
+            let showroomItemImg = document.createElement("img");
+            showroomItemImg.classList.add("showroom-item-img");
+            showroomItemImg.src = project.imgSrc;
+            showroomItemImg.title = project.name;
+            showroomItemImg.alt = project.name;
+            showroomItemImg.style.animationDelay = `${index*0.5}s`;
+            showroomItem.appendChild(showroomItemImg);
+
+            dom_showroom.appendChild(showroomItem);
+            index++
+        }
     }
 
     let projectsList = document.querySelector(".projects-list");

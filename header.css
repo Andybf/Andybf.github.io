@@ -1,0 +1,142 @@
+body {
+    background-color: var(--first-background);
+    width: 100%;
+}
+
+nav {
+    background-color: var(--first-background);
+    padding: 1vh 8vw;
+    height: 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: calc(100% - 16vw);
+    box-shadow: 0px 6px 4px 0px var(--shadow-color);
+    z-index: 100;
+}
+
+a.contact-button {
+    font-size: 11pt;
+    border-radius: 5px;
+    background-color: var(--first-blue-tone);
+    padding: 4px 12px;
+    border: none;
+    cursor: pointer;
+    height: calc(100% - 8px);
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+a.contact-button:hover {
+    filter: brightness(1.25);
+}
+span.donate-message {
+    color: var(--second-font-color);
+}
+img.contact-img {
+    height: 15px;
+}
+
+h1 {
+    font-size: 16pt;
+}
+
+h2 {
+    font-size: 24pt;
+}
+
+section.page-showroom {
+    padding-top: 60px;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+div.page-showroom-container {
+    display: inline-flex;
+}
+
+.showroom-item {
+    width: 15vw;
+    overflow: hidden;
+    transform: skewX(10deg);
+    border-left: 10px solid var(--second-background);
+}
+
+.showroom-item-img {
+    height: 66vh;
+    transform: skewX(-10deg) translateX(-150px) scale(1.05);
+    filter: var(--image-brightness);
+    opacity: 0;
+    animation-name: showroomFade;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+section.page-description {
+    background-color: var(--second-background);
+    padding: 4vh 8vw;
+    row-gap: 4vh;
+    display: grid;
+}
+
+section.description-container {
+    display: grid;
+    row-gap: 1rem;
+    text-align: justify;
+    line-height: 25px;
+}
+
+@keyframes showroomFade {
+    0% {
+        filter: 0.0;
+    }
+    100% {
+        opacity: var(--image-opacity);
+    }
+}
+
+@media(max-width: 1366px) {
+    .showroom-item {
+        width: 20vw;
+    }
+
+    .showroom-item-img {
+        height: 66vh;
+    }
+}
+
+@media(max-width: 768px) {
+
+    nav {
+        padding: 1vh 4vw;
+        width: calc(100% - 8vw);
+    }
+
+    h1 {
+        font-size: 14pt;
+    }
+
+    button.contact-button {
+        border-radius: 0.75rem;
+    }
+
+    img.contact-img {
+        display: none;
+    }
+
+    section.page-description {
+        padding: 4vh 4vw;
+    }
+
+    .showroom-item {
+        width: 25vw;
+    }
+
+    .showroom-item-img {
+        height: 50vh;
+    }
+
+}

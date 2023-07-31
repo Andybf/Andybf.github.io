@@ -25,10 +25,8 @@
         "title" : "My Projects",
         "itemType" : "project",
         "description" : [
-            "Welcome!",
-            "Here you'll find some of the projects I've been working on independently, things for fun and a willingness to experiment algorithms with focus for simulations and virtual games.",
-            "You can try out the prototypes through the 'Live demo' button, or if you want, view the source code through the 'Source code' button to open the hood of the machines and see how they work.",
-            "Keep in mind that every software shown in this site are prototypes, they come without any warranty of functioning. every project have a GPLv3 license.",
+            "Here you'll find projects I've been working on independently, just for fun and a willingness to experiment algorithms with focus for simulations and virtual games.",
+            "Start the apps through the 'Live demo' button. To open the hood, and see how these machines work, use the 'Source code' button.",
             "Enjoy yourself!"
         ],
         "items" : [
