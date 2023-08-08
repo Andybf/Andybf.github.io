@@ -69,10 +69,7 @@ div.page-showroom-container {
     height: 66vh;
     transform: skewX(-10deg) translateX(-150px) scale(1.05);
     filter: var(--image-brightness);
-    opacity: 0;
-    animation-name: showroomFade;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
+    opacity: var(--image-opacity);
 }
 
 section.page-description {
@@ -87,15 +84,6 @@ section.description-container {
     row-gap: 1rem;
     text-align: justify;
     line-height: 25px;
-}
-
-@keyframes showroomFade {
-    0% {
-        filter: 0.0;
-    }
-    100% {
-        opacity: var(--image-opacity);
-    }
 }
 
 @media(max-width: 1366px) {
