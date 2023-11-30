@@ -1,6 +1,6 @@
 /* 
  * AndView Framework
- * Copyright © 2022 Anderson Bucchianico. All rights reserved.
+ * Copyright © 2022 - 2023 Anderson Bucchianico. All rights reserved.
  * 
 */
 
@@ -17,37 +17,5 @@ export default class AVutils {
         for (let index=0; index<iterationCount; index++) {
             map1.set(Array.from(map2)[index][0], {localName : Array.from(map2)[index][1].localName});
         }
-    }
-
-    static showToast(type, message) {
-        function closeToast() {
-
-        }
-        
-        let toast = document.createElement('div');
-        toast.innerText = message;
-        toast.style = {
-            position: 'absolute',
-            width: '200px',
-            height: '50px',
-            top: '5%',
-            left: '50%'
-        }
-        switch(type) {
-            case 'info':
-                toast.style.background = 'grey';
-                break;
-            case 'warn':
-                toast.style.background = 'yellow';
-                break;
-            case 'error':
-                toast.style.background = 'red';
-                break;
-            default:
-                toast.style.background = 'grey';
-        }
-        
-        document.documentElement.appendChild(toast);
-        setTimeout(closeToast(),5000);
     }
 }

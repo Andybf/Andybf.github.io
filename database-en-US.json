@@ -44,19 +44,6 @@
                 "isVisible" : true
             },
             {
-                "name" : "Icosphere",
-                "category" : "Game development library",
-                "imgSrc" : "/media/img/en-US/icosphere.webp",
-                "description" : "<p>The Icosphere Game Library is a high-performance cross-platform 2D/3D game creation library with support for hardware acceleration. With a simplified architecture written in C/C++, it allows you to easily compile games for both desktop and web browsers natively. Including smartphones, tablets, consoles and Windows, Linux and macOS computers and Chrome, Firefox and Safari browsers.</p><p>The entire specification of the library can be found in the documentation available through the link below. With introduction, system overview, architecture, examples and reference material. </p><p><a href='https://andybf.github.io/IcosphereGameLibrary/IcosphereGameLibrary/documentation/'>Access the documentation here</a></p>",
-                "languages" : ["C","C++","OpenGL","SDL","WebAssembly","JavaScript"],
-                "devices" : ["phones","tablets","consoles","desktops"],
-                "link" : "https://github.com/Andybf/IcosphereGameLibrary/",
-                "linkLiveDemo" : "https://andybf.github.io/IcosphereGameLibrary/IcosphereGameLibrary/example/",
-                "isLiveDemoEnabled" : true,
-                "isViewSourceEnabled" : true,
-                "isVisible" : true
-            },
-            {
                 "name" : "Open Flappy",
                 "category" : "Web Game",
                 "imgSrc" : "/media/img/en-US/flappy.webp",
